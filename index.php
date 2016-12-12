@@ -12,9 +12,7 @@
 <body>
 
 <header role="banner">
-    <h1>
-        Port<span>folio</span>
-    </h1>
+    <h1>Port<span>folio</span></h1>
 </header>
 
 <nav role="navigation">
@@ -73,7 +71,7 @@
 
         </div>
         <div id="figure-works">
-            <figure data-work="valeuretcapital" class="effect-apollo col-lg-4 col-md-6 col-sm-12 col-xs-12">
+            <figure data-work="valeuretcapital" class="work_figure">
                 <img src="img/valeuretcapital.jpg" alt="img15"/>
                 <figcaption>
                     <h2>Projet <span>Echo</span></h2>
@@ -95,7 +93,7 @@
                     <a href="#">Voir plus</a>
                 </figcaption>
             </figure>
-            <figure data-work="immobilis" class="effect-apollo col-lg-4 col-md-6 col-sm-12 col-xs-12">
+            <figure data-work="immobilis" class="work_figure">
                 <img src="img/immobilis.jpg" alt="img15"/>
                 <figcaption>
                     <h2>Projet <span>Immobilis</span></h2>
@@ -107,7 +105,7 @@
                     <a href="#">Voir plus</a>
                 </figcaption>
             </figure>
-            <figure data-work="prixy" class="effect-apollo col-lg-4 col-md-6 col-sm-12 col-xs-12">
+            <figure data-work="prixy" class="work_figure">
                 <img src="img/prixy.jpg" alt="img18"/>
                 <figcaption>
                     <h2>Projet <span>Prixy</span></h2>
@@ -118,7 +116,7 @@
                     <a href="#">Voir plus</a>
                 </figcaption>
             </figure>
-            <figure data-work="xavierChevalier" class="effect-apollo col-lg-4 col-md-6 col-sm-12 col-xs-12">
+            <figure data-work="xavierChevalier" class="work_figure">
                 <img src="img/xavierChevalier.jpg" alt="img04"/>
                 <figcaption>
                     <h2>Portfolio <span>principal</span></h2>
@@ -129,7 +127,7 @@
                     <a href="#">Voir plus</a>
                 </figcaption>
             </figure>
-            <figure data-work="elkyos_2" class="effect-apollo col-lg-4 col-md-6 col-sm-12 col-xs-12">
+            <figure data-work="elkyos_2" class="work_figure">
                 <img src="img/elkyos_2.jpg" alt="img04"/>
                 <figcaption>
                     <h2>Design <span>Elkyos</span></h2>
@@ -140,7 +138,7 @@
                     <a href="#">Voir plus</a>
                 </figcaption>
             </figure>
-            <figure data-work="ludovicBarthelemi" class="effect-apollo col-lg-4 col-md-6 col-sm-12 col-xs-12">
+            <figure data-work="ludovicBarthelemi" class="work_figure">
                 <img src="img/ludovicBarthelemi.jpg" alt="img04"/>
                 <figcaption>
                     <h2>Ludovic <span>Barthelemi</span></h2>
@@ -151,7 +149,7 @@
                     <a href="#">Voir plus</a>
                 </figcaption>
             </figure>
-            <figure data-work="pf_vik" class="effect-apollo col-lg-4 col-md-6 col-sm-12 col-xs-12">
+            <figure data-work="pf_vik" class="work_figure">
                 <img src="img/pf_vik.jpg" alt="img04"/>
                 <figcaption>
                     <h2>Portfolio <span>Vik project</span></h2>
@@ -162,7 +160,7 @@
                     <a href="#">Voir plus</a>
                 </figcaption>
             </figure>
-            <figure data-work="nicolasChevalier" class="effect-apollo col-lg-4 col-md-6 col-sm-12 col-xs-12">
+            <figure data-work="nicolasChevalier" class="work_figure">
                 <img src="img/nicolasChevalier.jpg" alt="img18"/>
                 <figcaption>
                     <h2>Nicolas <span>Chevalier</span></h2>
@@ -173,7 +171,7 @@
                     <a href="#">Voir plus</a>
                 </figcaption>
             </figure>
-            <figure data-work="elkyos" class="effect-apollo col-lg-4 col-md-6 col-sm-12 col-xs-12">
+            <figure data-work="elkyos" class="work_figure">
                 <img src="img/elkyos.jpg" alt="img18"/>
                 <figcaption>
                     <h2>Design <span>Elkyos</span></h2>
@@ -200,7 +198,7 @@
     <section class="veille-technologique">
         <h2><span>Veille</span> technologique</h2>
         <p>
-            Je prépare ma veille technologique sur les différents frameworks JavaScript existant actuellement.
+            Je prépare ma veille technologique sur les différentes méthodologies CSS/SASS existantes actuellement.
         </p>
         <p>
             Bientôt disponible :)
