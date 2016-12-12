@@ -1,0 +1,349 @@
+@charset "UTF-8"
+@import "module/fmx.scss"
+@import "module/easings.sass"
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200)
+
+$media-xs: "(max-width: 767px)"
+$media-sm: "(min-width: 768px) and (max-width: 991px)"
+$media-sm--: "(max-width: 991px)"
+$media-md: "(min-width: 992px) and (max-width: 1199px)"
+$media-md--: "(max-width: 1199px)"
+$media-lg: "(min-width: 1200px)"
+
+$Raleway: Raleway, Arial, sans-serif
+@import "hoverEffect"
+
+*, *::after, *::before
+  margin: 0
+  padding: 0
+  outline: 0 !important
+  -moz-osx-font-smoothing: grayscale
+  -webkit-font-smoothing: antialiased
+
+html, body
+  height: 100%
+  font-family: $Raleway
+  font-size: 22px
+  font-weight: 700
+  overflow: hidden
+  @media #{$media-sm--}
+    font-size: 16px
+
+body
+  background: url("../img/low_poly_bg.jpg") repeat -250px 50%
+  background-size: cover
+  transition: background-position 1s $easeInOutQuint
+
+li
+  list-style: none
+
+h1
+  font-weight: 200
+  span
+    font-weight: 400
+
+a
+  color: #333333
+  &:hover, &:active, &:focus
+    color: #9c9c9c
+    text-decoration: none
+
+.section_background
+  z-index: -1
+  content: ''
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  opacity: .2
+  filter: grayscale(100%)
+  background-size: cover
+  background-position: center
+
+body[class^="section_"]
+  #logo polyline
+    stroke: #fff
+#logo
+  width: 100px
+  height: 100px
+
+#work_detail
+  display: none
+  color: #fff
+  padding: 30% 80px 40px
+  background-color: #a1a1a1
+  #work_detail_background
+    @extend .section_background
+    z-index: 0
+    opacity: .15
+    content: none
+  p
+    z-index: 5
+    padding: 10px 0
+
+#cube_effect
+  z-index: 50
+  position: absolute
+  top: 0
+  left: 0
+  opacity: 0
+  cursor: pointer
+  overflow: hidden
+  background-color: #363636
+  //background-color: #FF2B55
+  transition: opacity .3s $easeOutExpo
+  img
+    opacity: 1
+    min-width: 100%
+    min-height: 100%
+    transition: opacity .6s $easeOutExpo, transform 1s $easeOutExpo
+  &:hover img
+    opacity: .4
+
+#figure-works
+  opacity: 1
+  overflow: hidden
+  transition: all .8s $easeOutExpo
+
+.base
+  display: inline-block
+  position: absolute
+  top: 0
+  left: 0
+  width: 50%
+  height: 100%
+  transform: translate3d(0, 0, 0)
+  transition: transform .6s $easeOutQuint
+  > *
+    position: relative
+
+header[role="banner"]
+  @extend .base
+  h1
+    position: absolute
+    color: #fff
+    top: 50%
+    left: 50%
+    opacity: 1
+    transform: translate3d(-50%, -50%, 0)
+    transition: all .2s
+
+nav[role="navigation"]
+  @extend .base
+  z-index: 5
+  left: 50%
+  background-color: #fff
+  transition: transform .6s $easeOutQuint, width .4s $easeOutQuint, color .6s $easeOutQuint, background-color .4s $easeInQuint
+  .nav-container
+    display: block
+    position: absolute
+    top: 42%
+    left: 50%
+    text-align: center
+    font-weight: 200
+    transform: translate3d(-50%, -50%, 0)
+    @media #{$media-xs}
+      top: 40%
+    ul
+      text-transform: uppercase
+      li
+        @media #{$media-sm--}
+          margin: 5px auto
+  aside.rs
+    position: absolute
+    text-align: center
+    width: 70%
+    top: 83%
+    left: 50%
+    transform: translate3d(-50%, 0, 0)
+    @media #{$media-md--}
+      width: 90%
+    div
+      color: #3a3a3a
+      border: 1px solid #3a3a3a
+      padding: 5px 20px
+      font-weight: 200
+      opacity: .4
+      font-size: 14px
+      transition: opacity .6s $easeOutCubic
+      svg
+        path, rect, ellipse
+          stroke: #3a3a3a
+          fill: #3a3a3a
+      @media #{$media-sm--}
+        padding: 5px
+      &:hover
+        opacity: 1
+        transition: opacity .2s $easeOutCubic
+      svg, span
+        display: inline-block
+      svg
+        width: 25px
+        height: 25px
+      span
+        margin-left: 10px
+        vertical-align: 30%
+
+div[role="main"]
+  @extend .base
+  z-index: 0
+  left: 100%
+  transform: translate3d(0, 0, 0)
+  transition: transform 1s $easeOutSine
+  section
+    z-index: -1
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    transform: translate3d(0, 0, 0)
+    transition: transform .9s $easeOutQuint
+    &.works
+      transform: translate3d(0, 0, 0)
+
+body.section_move
+  background-position: 0 50%
+  nav[role="navigation"]
+    transform: translate3d(-100%, 0, 0)
+
+.section_show
+  z-index: 2
+  overflow-x: hidden
+  transform: translate3d(-100%, 0, 0)
+
+section.works
+  overflow-y: auto
+  background-color: rgba(255, 255, 255, .15)
+
+section.about
+  color: #fff
+  padding: 40px 100px
+  background-color: #a1a1a1
+  &::before
+    @extend .section_background
+    background-image: url("../img/backgrounds/forest_fire.jpg")
+  h2
+    text-align: center
+    font-size: 1.8em
+    margin-top: 10vw
+    margin-bottom: 60px
+    span
+      font-weight: 200
+  p
+    text-align: justify
+    line-height: 45px
+    @media #{$media-sm--}
+      line-height: 20px
+
+section.veille-technologique
+  color: #fff
+  padding: 40px 100px
+  background-color: #a1a1a1
+  &::before
+    @extend .section_background
+    background-image: url("../img/backgrounds/moulin.jpg")
+  h2
+    text-align: center
+    font-size: 1.8em
+    margin-top: 10vw
+    margin-bottom: 60px
+    span
+      font-weight: 200
+  p
+    text-align: justify
+    line-height: 45px
+
+section.cv
+  color: #fff
+  padding: 40px
+  background-color: #a1a1a1
+  &::before
+    @extend .section_background
+    background-image: url("../img/backgrounds/savane.jpg")
+  h2
+    text-align: center
+    font-size: 1.8em
+    margin-top: 10vw
+    margin-bottom: 60px
+    span
+      font-weight: 200
+
+//CONTROLLERS
+body.section_
+  //global
+  &works, &about, &cv, &veille-technologique
+    @extend .section_move
+    header[role="banner"] h1
+      opacity: 0
+      transition: all 1s
+    nav[role="navigation"]
+      width: 50%
+      left: 50%
+      color: #fff
+      background-color: #303030
+      transition: transform .6s $easeOutQuint, width 1s $easeOutQuint, color .6s $easeOutQuint, background-color .4s $easeInQuint
+      aside.rs div
+        color: #fff
+        border: 1px solid #fff
+        svg
+          path, rect, ellipse
+            stroke: #fff
+            fill: #fff
+      a
+        color: #e8e8e8
+        &:hover, &:active, &:focus
+          color: #aeaeae
+    div[role="main"]
+      transform: translate3d(0, 0, 0)
+
+  &works
+    nav[role="navigation"]
+      width: 30%
+      transform: translate3d(-166.68%, 0, 0)
+      @media #{$media-sm--}
+        width: 50%
+        transform: translate3d(-100%, 0, 0)
+      a[href="#works"]
+        color: #aeaeae !important
+    div[role="main"]
+      width: 70%
+      @media #{$media-sm--}
+        width: 50%
+    &.work_active
+      #figure-works
+        opacity: 0
+        height: 0
+      #work_detail
+        display: block
+        height: 100%
+      #cube_effect
+        height: 15% !important
+        transform: translate3d(50%, 50%, 0) scale(2.05) !important
+        transition: all .6s $easeOutExpo
+        img
+          opacity: .8
+          transform: translate3d(5px, -10%, 0)
+
+    section.works
+      @extend .section_show
+
+  &veille-technologique
+    section.veille-technologique
+      @extend .section_show
+    a[href="#veille-technologique"]
+      color: #aeaeae !important
+
+  &about
+    section.about
+      @extend .section_show
+    a[href="#about"]
+      color: #aeaeae !important
+
+  &cv
+    section.cv
+      @extend .section_show
+    a[href="#cv"]
+      color: #aeaeae !important

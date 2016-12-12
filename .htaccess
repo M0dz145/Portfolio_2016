@@ -1,0 +1,43 @@
+##SetEnv REGISTER_GLOBALS 0
+##SetEnv ZEND_OPTIMIZER 1
+##SetEnv MAGIC_QUOTES 1
+##SetEnv PHP_VER 5_5
+#
+#RewriteEngine On
+#
+### Check for mime types commonly accepted by mobile devices
+##RewriteCond %{HTTP_ACCEPT} "text\/vnd\.wap\.wml|application\/vnd\.wap\.xhtml\+xml" [NC]
+##RewriteCond %{REQUEST_URI} ^/$
+##RewriteRule ^ http://chevalier-xavier.fr/m%{REQUEST_URI} [R,L]
+#
+## Redirection
+#RewriteRule .* - [F]
+#
+## protect the htaccess file
+#<files .htaccess>
+#    order allow,deny
+#    deny from all
+#</files>
+## protection de la lecture des répertoires
+#Options -Indexes
+#
+## BEGIN Cache-Control Headers
+##<ifmodule mod_headers.c>
+##    <filesmatch "\\.(ico|jpe?g|png|gif|swf|gz|ttf)$">
+##        Header set Cache-Control "max-age=900, public"
+##    </filesmatch>
+##    <filesmatch "\\.(css)$">
+##        Header set Cache-Control "max-age=900, public"
+##    </filesmatch>
+##    <filesmatch "\\.(js)$">
+##        Header set Cache-Control "max-age=900, private"
+##    </filesmatch>
+##    <filesmatch "\\.(html|htm)$">
+##        Header set Cache-Control "max-age=900, public"
+##    </filesmatch>
+##    # Disable caching for scripts and other dynamic files
+##    <filesmatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
+##        Header unset Cache-Control
+##    </filesmatch>
+##</ifmodule>
+## END Cache-Control Headers
