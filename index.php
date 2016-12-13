@@ -101,7 +101,7 @@
                 <div class="content">
                     <h1>Immobilis</h1>
                     <p>
-                        Immobilis est un projet conçut par 3 personnes dans le cadre scolaire de terminale. Ce site rescence toutes les annonces immobilières préalablement crées par des propriétaires d'appartements/maisons...
+                        Immobilis est un projet conçu par 3 personnes dans le cadre scolaire de terminale. Ce site rescence toutes les annonces immobilières préalablement crées par des propriétaires d'appartements/maisons...
                     </p>
                     <p>
                         J'ai développé tout l'aspect graphique du site et une très grande partie de ses fonctionnalités.

@@ -103,11 +103,6 @@ body[class^="section_"]
   &:hover img
     opacity: .4
 
-#figure-works
-  opacity: 1
-  overflow: hidden
-  transition: all .8s $easeOutExpo
-
 .base
   display: inline-block
   position: absolute
@@ -200,34 +195,36 @@ body[class^="section_"]
 
 body.work_active
   #work_selected
+    opacity: 1
     transform: translate3d(0, 0, 0)
+    transition: all .6s $easeOutExpo
 #work_selected
   z-index: 10
-  position: absolute
+  position: fixed
   top: 0
   left: 0
   height: 100%
   width: 100%
+  opacity: 0
   background-color: #fff
-  transform: translate3d(200%, 0, 0)
-  transition: all .4s $easeOutExpo
-  #back
-    position: absolute
-    top: 25%
-    left: 0
-    color: rgba(255, 255, 255, .6)
+  transform: translate3d(150%, 0, 0)
+  transition: all .4s $easeOutSine
+  h1
     text-align: center
-    font-size: 1.8em
-    line-height: 1em
-    padding-left: 20px
+  #back
+    z-index: 2
+    position: absolute
+    top: calc(25% + 15px)
+    right: 25px
+    color: rgba(0, 0, 0, .3)
+    text-align: center
+    font-size: 1.2em
     width: 50px
     height: 50px
-    background-color: #424242
     transition: all .8s $easeOutSine
     &:hover
-      color: #fff
-      padding-left: 0
-      transition: all .2s $easeOutSine
+      color: rgba(0, 0, 0, .8)
+      transition: all .4s $easeOutSine
   .content
     padding: 15px 75px
     p

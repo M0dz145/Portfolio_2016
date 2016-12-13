@@ -89,11 +89,6 @@ body[class^="section_"] #logo polyline {
   #cube_effect:hover img {
     opacity: .4; }
 
-#figure-works {
-  opacity: 1;
-  overflow: hidden;
-  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
-
 .base, header[role="banner"], nav[role="navigation"], div[role="main"] {
   display: inline-block;
   position: absolute;
@@ -196,37 +191,39 @@ body[class^="section_"] #logo polyline {
       min-width: 100%; }
 
 body.work_active #work_selected {
+  opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0); }
+          transform: translate3d(0, 0, 0);
+  transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1); }
 
 #work_selected {
   z-index: 10;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
+  opacity: 0;
   background-color: #fff;
-  -webkit-transform: translate3d(200%, 0, 0);
-          transform: translate3d(200%, 0, 0);
-  transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1); }
+  -webkit-transform: translate3d(150%, 0, 0);
+          transform: translate3d(150%, 0, 0);
+  transition: all 0.4s cubic-bezier(0.39, 0.575, 0.565, 1); }
+  #work_selected h1 {
+    text-align: center; }
   #work_selected #back {
+    z-index: 2;
     position: absolute;
-    top: 25%;
-    left: 0;
-    color: rgba(255, 255, 255, 0.6);
+    top: calc(25% + 15px);
+    right: 25px;
+    color: rgba(0, 0, 0, 0.3);
     text-align: center;
-    font-size: 1.8em;
-    line-height: 1em;
-    padding-left: 20px;
+    font-size: 1.2em;
     width: 50px;
     height: 50px;
-    background-color: #424242;
     transition: all 0.8s cubic-bezier(0.39, 0.575, 0.565, 1); }
     #work_selected #back:hover {
-      color: #fff;
-      padding-left: 0;
-      transition: all 0.2s cubic-bezier(0.39, 0.575, 0.565, 1); }
+      color: rgba(0, 0, 0, 0.8);
+      transition: all 0.4s cubic-bezier(0.39, 0.575, 0.565, 1); }
   #work_selected .content {
     padding: 15px 75px; }
     #work_selected .content p {

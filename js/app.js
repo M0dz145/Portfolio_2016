@@ -33,12 +33,18 @@ $elems.on('click', function(e){
     section(href);
 });
 
+$nav.on('click', function(){
+    if($body.hasClass('work_active')){
+        $body.removeClass('work_active');
+    }
+});
+
 $work.on('click', function(e){
     e.preventDefault();
     var work_name    = $(this).data('work'),
         work_content = $(this).find('.work_content').html().trim();
 
-    $work_selected.html('<a href="#" id="back">&#8592;</a>' + work_content);
+    $work_selected.html('<a href="#" id="back">✖</a>' + work_content);
     $back = $('#back');
 
     $back.on('click', function(e){
