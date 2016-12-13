@@ -3,11 +3,12 @@
  * Created on 15/03/2016.
  */
 
-var $nav         = $('nav[role="navigation"]'),
-    $elems       = $nav.find('li a'),
-    $work        = $('figure'),
-    $work_detail = $('#work_detail'),
-    $body        = $('body');
+var $nav           = $('nav[role="navigation"]'),
+    $elems         = $nav.find('li a'),
+    $work          = $('.work_figure'),
+    $work_selected = $('#work_selected'),
+    $back          = $('#back'),
+    $body          = $('body');
 
 function section(section){
     if (section === 'accueil'){
@@ -37,18 +38,14 @@ $work.on('click', function(e){
     var work_name    = $(this).data('work'),
         work_content = $(this).find('.work_content').html().trim();
 
-    $('#cube_effect')
-        .css({
-            width: $(this).width(),
-            height: $(this).height(),
-            opacity: 1,
-            transform: 'translate3d(' + $(this).position().left + 'px, ' + $(this).position().top + 'px, 0)'
-        })
-        .find('img')
-        .attr('src', 'img/' + work_name + '.jpg');
+    $work_selected.html('<a href="#" id="back">&#8592;</a>' + work_content);
+    $back = $('#back');
 
-    $work_detail.html(work_content + '<div id="work_detail_background"></div>'); //.css('background-image', 'url(img/' + work_name + '.jpg)')
-    $work_detail.find('#work_detail_background').css('background-image', 'url(img/' + work_name + '.jpg)');
+    $back.on('click', function(e){
+        e.preventDefault();
+
+        $body.removeClass('work_active');
+    });
 
     setTimeout(function(){
         $body.addClass('work_active');

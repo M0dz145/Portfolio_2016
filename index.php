@@ -63,125 +63,159 @@
 </nav>
 
 <div role="main">
-    <section class="works grid container-fluid">
-        <div id="cube_effect">
-            <img src="img/immobilis.jpg">
-        </div>
-        <div id="work_detail">
+    <section class="works">
+        <div id="work_selected"></div>
 
+        <div data-work="valeuretcapital" class="work_figure col-md-6">
+            <h2>Projet <span>Echo</span></h2>
+            <p class="description">Application de gestion des appels téléphoniques - STAGE</p>
+            <div class="work_content">
+                <div class="image_header">
+                    <img src="img/valeuretcapital.jpg" alt="img15"/>
+                </div>
+                <div class="content">
+                    <h1>Echo</h1>
+                    <p>
+                        Echo est une application de gestion des contacts de "Valority | Valeur et Capital" étant disponible seulement sur l'intranet de l'entreprise, destinée au service de location de Pure Gestion.
+                    </p>
+                    <p>
+                        Cette application permettra aux utilisateurs de regrouper les données des contacts et de gérer les différentes demandes de ces derniers.
+                    </p>
+                    <p>
+                        De nombreuses fonctionnalitées ont été développer pour assurer l'historisation d'appels, la gestions des droits/affectations, gestions des programmes immobiliers...
+                    </p>
+                    <p>
+                        Plus d'information disponible sur cette adresse
+                    </p>
+                </div>
+            </div>
+            <a href="#">Voir plus</a>
         </div>
-        <div id="figure-works">
-            <figure data-work="valeuretcapital" class="work_figure">
-                <img src="img/valeuretcapital.jpg" alt="img15"/>
-                <figcaption>
-                    <h2>Projet <span>Echo</span></h2>
-                    <p>Application de gestion des appels téléphoniques - STAGE</p>
-                    <div class="work_content">
-                        <p>
-                            Echo est une application de gestion des contacts de "Valority | Valeur et Capital" étant disponible seulement sur l'intranet de l'entreprise, destinée au service de location de Pure Gestion.
-                        </p>
-                        <p>
-                            Cette application permettra aux utilisateurs de regrouper les données des contacts et de gérer les différentes demandes de ces derniers.
-                        </p>
-                        <p>
-                            De nombreuses fonctionnalitées ont été développer pour assurer l'historisation d'appels, la gestions des droits/affectations, gestions des programmes immobiliers...
-                        </p>
-                        <p>
-                            Plus d'information disponible sur cette adresse
-                        </p>
-                    </div>
-                    <a href="#">Voir plus</a>
-                </figcaption>
-            </figure>
-            <figure data-work="immobilis" class="work_figure">
-                <img src="img/immobilis.jpg" alt="img15"/>
-                <figcaption>
-                    <h2>Projet <span>Immobilis</span></h2>
-                    <p>Immobilis est un projet étudiant de BAC</p>
-                    <div class="work_content">
+        <div data-work="immobilis" class="work_figure col-md-6">
+            <h2>Projet <span>Immobilis</span></h2>
+            <p class="description">Immobilis est un projet étudiant de BAC</p>
+            <div class="work_content">
+                <div class="image_header">
+                    <img src="img/immobilis.jpg" alt="img15"/>
+                </div>
+                <div class="content">
+                    <h1>Immobilis</h1>
+                    <p>
                         Immobilis est un projet conçut par 3 personnes dans le cadre scolaire de terminale. Ce site rescence toutes les annonces immobilières préalablement crées par des propriétaires d'appartements/maisons...
+                    </p>
+                    <p>
                         J'ai développé tout l'aspect graphique du site et une très grande partie de ses fonctionnalités.
-                    </div>
-                    <a href="#">Voir plus</a>
-                </figcaption>
-            </figure>
-            <figure data-work="prixy" class="work_figure">
-                <img src="img/prixy.jpg" alt="img18"/>
-                <figcaption>
-                    <h2>Projet <span>Prixy</span></h2>
-                    <p>Prixy est un projet étudiant de BTS</p>
-                    <div class="work_content">
+                    </p>
+                </div>
+            </div>
+            <a href="#">Voir plus</a>
+        </div>
+        <div data-work="prixy" class="work_figure col-md-6">
+            <h2>Projet <span>Prixy</span></h2>
+            <p class="description">Prixy est un projet étudiant de BTS</p>
+            <div class="work_content">
+                <div class="image_header">
+                    <img src="img/prixy.jpg" alt="img18"/>
+                </div>
+                <div class="content">
+                    <h1>Prixy</h1>
+                    <p>
                         Prixy project
-                    </div>
-                    <a href="#">Voir plus</a>
-                </figcaption>
-            </figure>
-            <figure data-work="xavierChevalier" class="work_figure">
-                <img src="img/xavierChevalier.jpg" alt="img04"/>
-                <figcaption>
-                    <h2>Portfolio <span>principal</span></h2>
-                    <p>Mon portfolio actuel</p>
-                    <div class="work_content">
+                    </p>
+                </div>
+            </div>
+            <a href="#">Voir plus</a>
+        </div>
+        <div data-work="xavierChevalier" class="work_figure col-md-6">
+            <h2>Portfolio <span>principal</span></h2>
+            <p class="description">Mon portfolio actuel</p>
+            <div class="work_content">
+                <div class="image_header">
+                    <img src="img/xavierChevalier.jpg" alt="img04"/>
+                </div>
+                <div class="content">
+                    <h1>Portfolio</h1>
+                    <p>
                         Ceci est mon portfolio principal.
-                    </div>
-                    <a href="#">Voir plus</a>
-                </figcaption>
-            </figure>
-            <figure data-work="elkyos_2" class="work_figure">
-                <img src="img/elkyos_2.jpg" alt="img04"/>
-                <figcaption>
-                    <h2>Design <span>Elkyos</span></h2>
-                    <p>Elkyos est un projet MMORPG médiéval fantastique</p>
-                    <div class="work_content">
+                    </p>
+                </div>
+            </div>
+            <a href="#">Voir plus</a>
+        </div>
+        <div data-work="elkyos_2" class="work_figure col-md-6">
+            <h2>Design <span>Elkyos</span></h2>
+            <p class="description">Elkyos est un projet MMORPG médiéval fantastique</p>
+            <div class="work_content">
+                <div class="image_header">
+                    <img src="img/elkyos_2.jpg" alt="img04"/>
+                </div>
+                <div class="content">
+                    <p>
                         Elkyos est un projet MMORPG se basant sur un univers médiéval fantastique avec une légère touche de steampunk. Anciennement chargé de tout l'apsect graphique du site, j'ai du quitter prématurément le projet après ma 11ème version.
-                    </div>
-                    <a href="#">Voir plus</a>
-                </figcaption>
-            </figure>
-            <figure data-work="ludovicBarthelemi" class="work_figure">
-                <img src="img/ludovicBarthelemi.jpg" alt="img04"/>
-                <figcaption>
-                    <h2>Ludovic <span>Barthelemi</span></h2>
-                    <p>Portfolio étudiant BTS SIO</p>
-                    <div class="work_content">
+                    </p>
+                </div>
+            </div>
+            <a href="#">Voir plus</a>
+        </div>
+        <div data-work="ludovicBarthelemi" class="work_figure col-md-6">
+            <h2>Ludovic <span>Barthelemi</span></h2>
+            <p class="description">Portfolio étudiant BTS SIO</p>
+            <div class="work_content">
+                <div class="image_header">
+                    <img src="img/ludovicBarthelemi.jpg" alt="img04"/>
+                </div>
+                <div class="content">
+                    <p>
                         Portfolio de Ludovic Barthelemi, jeune étudiant en BTS Systèmes Informatiques aux Organisations, nous avons collaborés pour réaliser un portfolio avec un système de navigation original et bien pensé.
-                    </div>
-                    <a href="#">Voir plus</a>
-                </figcaption>
-            </figure>
-            <figure data-work="pf_vik" class="work_figure">
-                <img src="img/pf_vik.jpg" alt="img04"/>
-                <figcaption>
-                    <h2>Portfolio <span>Vik project</span></h2>
-                    <p>Portfolio navigation original & intéractif</p>
-                    <div class="work_content">
+                    </p>
+                </div>
+            </div>
+            <a href="#">Voir plus</a>
+        </div>
+        <div data-work="pf_vik" class="work_figure col-md-6">
+            <h2>Portfolio <span>Vik project</span></h2>
+            <p class="description">Portfolio navigation original & intéractif</p>
+            <div class="work_content">
+                <div class="image_header">
+                    <img src="img/pf_vik.jpg" alt="img04"/>
+                </div>
+                <div class="content">
+                    <p>
                         Ce projet est un portfolio non terminé avec un système de navigation original et interactif.
-                    </div>
-                    <a href="#">Voir plus</a>
-                </figcaption>
-            </figure>
-            <figure data-work="nicolasChevalier" class="work_figure">
-                <img src="img/nicolasChevalier.jpg" alt="img18"/>
-                <figcaption>
-                    <h2>Nicolas <span>Chevalier</span></h2>
-                    <p>Portfolio développeur d'applications</p>
-                    <div class="work_content">
+                    </p>
+                </div>
+            </div>
+            <a href="#">Voir plus</a>
+        </div>
+        <div data-work="nicolasChevalier" class="work_figure col-md-6">
+            <h2>Nicolas <span>Chevalier</span></h2>
+            <p class="description">Portfolio développeur d'applications</p>
+            <div class="work_content">
+                <div class="image_header">
+                    <img src="img/nicolasChevalier.jpg" alt="img18"/>
+                </div>
+                <div class="content">
+                    <p>
                         Portfolio de Nicolas Chevalier, jeune développeur d'applications, mais également mon frère ainé. Avec ses idées, et mon envie d'un design clair/épuré, j'ai pu développer l'aspect graphique du site.
-                    </div>
-                    <a href="#">Voir plus</a>
-                </figcaption>
-            </figure>
-            <figure data-work="elkyos" class="work_figure">
-                <img src="img/elkyos.jpg" alt="img18"/>
-                <figcaption>
-                    <h2>Design <span>Elkyos</span></h2>
-                    <p>Elkyos est un projet MMORPG médiéval fantastique</p>
-                    <div class="work_content">
+                    </p>
+                </div>
+            </div>
+            <a href="#">Voir plus</a>
+        </div>
+        <div data-work="elkyos" class="work_figure col-md-6">
+            <h2>Design <span>Elkyos</span></h2>
+            <p class="description">Elkyos est un projet MMORPG médiéval fantastique</p>
+            <div class="work_content">
+                <div class="image_header">
+                    <img src="img/elkyos.jpg" alt="img18"/>
+                </div>
+                <div class="content">
+                    <p>
                         Elkyos est un projet MMORPG se basant sur un univers médiéval fantastique avec une légère touche de steampunk. Anciennement chargé de tout l'apsect graphique du site, j'ai du quitter prématurément le projet après ma 11ème version.
-                    </div>
-                    <a href="#">Voir plus</a>
-                </figcaption>
-            </figure>
+                    </p>
+                </div>
+            </div>
+            <a href="#">Voir plus</a>
         </div>
     </section>
 
