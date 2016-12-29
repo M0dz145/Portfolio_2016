@@ -17,7 +17,7 @@ html, body {
       font-size: 16px; } }
 
 body {
-  background: url("../img/low_poly_bg.jpg") repeat -250px 50%;
+  background: url("../../img/low_poly_bg.jpg") repeat -250px 50%;
   background-size: cover;
   transition: background-position 1s cubic-bezier(0.86, 0, 0.07, 1); }
 
@@ -367,7 +367,7 @@ section.about {
   padding: 40px 100px;
   background-color: #a1a1a1; }
   section.about::before {
-    background-image: url("../img/backgrounds/forest_fire.jpg"); }
+    background-image: url("../../img/backgrounds/forest_fire.jpg"); }
   section.about h2 {
     text-align: center;
     font-size: 1.8em;
@@ -387,7 +387,7 @@ section.veille-technologique {
   padding: 40px 100px;
   background-color: #a1a1a1; }
   section.veille-technologique::before {
-    background-image: url("../img/backgrounds/moulin.jpg"); }
+    background-image: url("../../img/backgrounds/moulin.jpg"); }
   section.veille-technologique h2 {
     text-align: center;
     font-size: 1.8em;
@@ -404,7 +404,7 @@ section.cv {
   padding: 40px;
   background-color: #a1a1a1; }
   section.cv::before {
-    background-image: url("../img/backgrounds/savane.jpg"); }
+    background-image: url("../../img/backgrounds/savane.jpg"); }
   section.cv h2 {
     text-align: center;
     font-size: 1.8em;

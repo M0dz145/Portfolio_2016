@@ -7,7 +7,7 @@
     <meta name="copyright" content="© chevalier-xavier.fr"/>
     <meta name="web_author" content="chevalier xavier"/>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/app.css"/>
+    <link rel="stylesheet" href="build/css/app.css"/>
 </head>
 <body>
 
@@ -63,10 +63,10 @@
 </nav>
 
 <div role="main">
-    <section class="works">
+    <section class="works" data-reveal-section="works">
         <div id="work_selected"></div>
 
-        <div data-work="valeuretcapital" class="work_figure col-md-6">
+        <div data-work="valeuretcapital" class="work_figure col-md-6" data-reveal-class="section_works">
             <h2>Projet <span>Echo</span></h2>
             <p class="description">Application de gestion des appels téléphoniques - STAGE</p>
             <div class="work_content">
@@ -76,13 +76,17 @@
                 <div class="content">
                     <h1>Echo</h1>
                     <p>
-                        Echo est une application de gestion des contacts de "Valority | Valeur et Capital" étant disponible seulement sur l'intranet de l'entreprise, destinée au service de location de Pure Gestion.
+                        Echo est une application de gestion des contacts de "Valority | Valeur et Capital" étant
+                        disponible seulement sur l'intranet de l'entreprise, destinée au service de location de Pure
+                        Gestion.
                     </p>
                     <p>
-                        Cette application permettra aux utilisateurs de regrouper les données des contacts et de gérer les différentes demandes de ces derniers.
+                        Cette application permettra aux utilisateurs de regrouper les données des contacts et de gérer
+                        les différentes demandes de ces derniers.
                     </p>
                     <p>
-                        De nombreuses fonctionnalitées ont été développer pour assurer l'historisation d'appels, la gestions des droits/affectations, gestions des programmes immobiliers...
+                        De nombreuses fonctionnalitées ont été développer pour assurer l'historisation d'appels, la
+                        gestions des droits/affectations, gestions des programmes immobiliers...
                     </p>
                     <p>
                         Plus d'information disponible sur cette adresse
@@ -91,7 +95,7 @@
             </div>
             <a href="#">Voir plus</a>
         </div>
-        <div data-work="immobilis" class="work_figure col-md-6">
+        <div data-work="immobilis" class="work_figure col-md-6" data-reveal-class="section_works">
             <h2>Projet <span>Immobilis</span></h2>
             <p class="description">Immobilis est un projet étudiant de BAC</p>
             <div class="work_content">
@@ -101,7 +105,9 @@
                 <div class="content">
                     <h1>Immobilis</h1>
                     <p>
-                        Immobilis est un projet conçu par 3 personnes dans le cadre scolaire de terminale. Ce site rescence toutes les annonces immobilières préalablement crées par des propriétaires d'appartements/maisons...
+                        Immobilis est un projet conçu par 3 personnes dans le cadre scolaire de terminale. Ce site
+                        rescence toutes les annonces immobilières préalablement crées par des propriétaires
+                        d'appartements/maisons...
                     </p>
                     <p>
                         J'ai développé tout l'aspect graphique du site et une très grande partie de ses fonctionnalités.
@@ -110,7 +116,7 @@
             </div>
             <a href="#">Voir plus</a>
         </div>
-        <div data-work="prixy" class="work_figure col-md-6">
+        <div data-work="prixy" class="work_figure col-md-6" data-reveal-class="section_works">
             <h2>Projet <span>Prixy</span></h2>
             <p class="description">Prixy est un projet étudiant de BTS</p>
             <div class="work_content">
@@ -126,7 +132,7 @@
             </div>
             <a href="#">Voir plus</a>
         </div>
-        <div data-work="xavierChevalier" class="work_figure col-md-6">
+        <div data-work="xavierChevalier" class="work_figure col-md-6" data-reveal-class="section_works">
             <h2>Portfolio <span>principal</span></h2>
             <p class="description">Mon portfolio actuel</p>
             <div class="work_content">
@@ -142,7 +148,7 @@
             </div>
             <a href="#">Voir plus</a>
         </div>
-        <div data-work="elkyos_2" class="work_figure col-md-6">
+        <div data-work="elkyos_2" class="work_figure col-md-6" data-reveal-class="section_works">
             <h2>Design <span>Elkyos</span></h2>
             <p class="description">Elkyos est un projet MMORPG médiéval fantastique</p>
             <div class="work_content">
@@ -151,13 +157,15 @@
                 </div>
                 <div class="content">
                     <p>
-                        Elkyos est un projet MMORPG se basant sur un univers médiéval fantastique avec une légère touche de steampunk. Anciennement chargé de tout l'apsect graphique du site, j'ai du quitter prématurément le projet après ma 11ème version.
+                        Elkyos est un projet MMORPG se basant sur un univers médiéval fantastique avec une légère touche
+                        de steampunk. Anciennement chargé de tout l'apsect graphique du site, j'ai du quitter
+                        prématurément le projet après ma 11ème version.
                     </p>
                 </div>
             </div>
             <a href="#">Voir plus</a>
         </div>
-        <div data-work="ludovicBarthelemi" class="work_figure col-md-6">
+        <div data-work="ludovicBarthelemi" class="work_figure col-md-6" data-reveal-class="section_works">
             <h2>Ludovic <span>Barthelemi</span></h2>
             <p class="description">Portfolio étudiant BTS SIO</p>
             <div class="work_content">
@@ -166,13 +174,15 @@
                 </div>
                 <div class="content">
                     <p>
-                        Portfolio de Ludovic Barthelemi, jeune étudiant en BTS Systèmes Informatiques aux Organisations, nous avons collaborés pour réaliser un portfolio avec un système de navigation original et bien pensé.
+                        Portfolio de Ludovic Barthelemi, jeune étudiant en BTS Systèmes Informatiques aux Organisations,
+                        nous avons collaborés pour réaliser un portfolio avec un système de navigation original et bien
+                        pensé.
                     </p>
                 </div>
             </div>
             <a href="#">Voir plus</a>
         </div>
-        <div data-work="pf_vik" class="work_figure col-md-6">
+        <div data-work="pf_vik" class="work_figure col-md-6" data-reveal-class="section_works">
             <h2>Portfolio <span>Vik project</span></h2>
             <p class="description">Portfolio navigation original & intéractif</p>
             <div class="work_content">
@@ -187,7 +197,7 @@
             </div>
             <a href="#">Voir plus</a>
         </div>
-        <div data-work="nicolasChevalier" class="work_figure col-md-6">
+        <div data-work="nicolasChevalier" class="work_figure col-md-6" data-reveal-class="section_works">
             <h2>Nicolas <span>Chevalier</span></h2>
             <p class="description">Portfolio développeur d'applications</p>
             <div class="work_content">
@@ -196,13 +206,15 @@
                 </div>
                 <div class="content">
                     <p>
-                        Portfolio de Nicolas Chevalier, jeune développeur d'applications, mais également mon frère ainé. Avec ses idées, et mon envie d'un design clair/épuré, j'ai pu développer l'aspect graphique du site.
+                        Portfolio de Nicolas Chevalier, jeune développeur d'applications, mais également mon frère ainé.
+                        Avec ses idées, et mon envie d'un design clair/épuré, j'ai pu développer l'aspect graphique du
+                        site.
                     </p>
                 </div>
             </div>
             <a href="#">Voir plus</a>
         </div>
-        <div data-work="elkyos" class="work_figure col-md-6">
+        <div data-work="elkyos" class="work_figure col-md-6" data-reveal-class="section_works">
             <h2>Design <span>Elkyos</span></h2>
             <p class="description">Elkyos est un projet MMORPG médiéval fantastique</p>
             <div class="work_content">
@@ -211,7 +223,9 @@
                 </div>
                 <div class="content">
                     <p>
-                        Elkyos est un projet MMORPG se basant sur un univers médiéval fantastique avec une légère touche de steampunk. Anciennement chargé de tout l'apsect graphique du site, j'ai du quitter prématurément le projet après ma 11ème version.
+                        Elkyos est un projet MMORPG se basant sur un univers médiéval fantastique avec une légère touche
+                        de steampunk. Anciennement chargé de tout l'apsect graphique du site, j'ai du quitter
+                        prématurément le projet après ma 11ème version.
                     </p>
                 </div>
             </div>
@@ -219,17 +233,19 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" data-reveal-section="about">
         <h2><span>Xavier</span> Chevalier</h2>
         <p>
-            Je m'appelle Xavier Chevalier, jeune développeur web de 20 ans. Je développe applications, interfaces et sites internet depuis maintenant plusieurs années...
+            Je m'appelle Xavier Chevalier, jeune développeur web de 20 ans. Je développe applications, interfaces et
+            sites internet depuis maintenant plusieurs années...
         </p>
         <p>
-            Si vous avez des questions ou des suggestions concernant ce site et sa création vous pouvez bien évidemment me contacter :)
+            Si vous avez des questions ou des suggestions concernant ce site et sa création vous pouvez bien évidemment
+            me contacter :)
         </p>
     </section>
 
-    <section class="veille-technologique">
+    <section class="veille-technologique" data-reveal-section="veille-technologique">
         <h2><span>Veille</span> technologique</h2>
         <p>
             Je prépare ma veille technologique sur les différentes méthodologies CSS/SASS existantes actuellement.
@@ -239,7 +255,7 @@
         </p>
     </section>
 
-    <section class="cv">
+    <section class="cv" data-reveal-section="cv">
         <h2><span>Curriculum</span> Vitae</h2>
         <p>
             Voici mon CV
@@ -248,8 +264,11 @@
 </div>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/jQuery.min.js"></script>
+<script type="text/javascript" src="js/anime.min.js"></script>
+<script type="text/javascript" src="js/scrollMonitor.js"></script>
+<script type="text/javascript" src="js/blockReveal.js"></script>
+<script type="text/javascript" src="build/js/app.js"></script>
 
 </body>
 </html>

@@ -1,3 +1,43 @@
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+module.exports = {
+    'bt': {
+        easing: 'easeOutExpo',
+        direction: 'bt',
+        onStart: function(contentEl) {
+            anime.remove(contentEl);
+            contentEl.style.opacity = 0;
+        },
+        onCover: function(contentEl) {
+            anime({
+                targets: contentEl,
+                duration: 800,
+                delay: 80,
+                easing: 'easeOutExpo',
+                translateY: [40, 0],
+                opacity: [0, 1]
+            });
+        }
+    },
+    'rl': {
+        direction: 'rl',
+        onStart: function(contentEl) {
+            contentEl.style.opacity = 0;
+        },
+        onCover: function(contentEl) {
+            contentEl.style.opacity = 1;
+        }
+    },
+    'lr': {
+        direction: 'lr',
+        onStart: function(contentEl) {
+            contentEl.style.opacity = 0;
+        },
+        onCover: function(contentEl) {
+            contentEl.style.opacity = 1;
+        }
+    }
+};
+},{}],2:[function(require,module,exports){
 /**
  * Copyright chevalier-xavier.fr
  * Created on 15/03/2016.
@@ -105,3 +145,4 @@ $(function() {
         }
     }
 });
+},{"./components/configsRevealFx":1}]},{},[2])
