@@ -1,0 +1,24 @@
+body.section_
+  &works, &about, &cv, &veille-technologique
+    background-position: 0 50%
+    header[role="banner"]
+      opacity: 0
+      transition: all 1s
+    nav[role="navigation"]
+      width: 50%
+      left: 50%
+      color: #fff
+      background-color: #303030
+      transform: translate3d(-100%, 0, 0)
+      transition: transform .6s $easeOutQuint, width .6s $easeOutQuint, color .6s $easeOutQuint, background-color .4s $easeInQuint
+      a
+        color: #e8e8e8
+        &:hover, &:active, &:focus
+          color: #aeaeae
+      aside.rs div
+        color: #fff
+        border: 1px solid #fff
+        svg
+          path, rect, ellipse
+            stroke: #fff
+            fill: #fff

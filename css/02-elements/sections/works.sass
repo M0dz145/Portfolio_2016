@@ -1,0 +1,80 @@
+section.works
+  display: block
+  padding: 0
+  height: 100%
+  overflow-y: auto
+  background-color: #f8f8f8
+  .block-revealer__content
+    height: 100%
+  .work_figure
+    display: inline-block
+    height: 45%
+    padding: 0
+    overflow: hidden
+    cursor: pointer
+    border-right: 1px solid rgba(0, 0, 0, .1)
+    border-bottom: 1px solid rgba(0, 0, 0, .1)
+    background-color: #fff
+    &:nth-of-type(even)
+      border-right: inherit
+    &::after, &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 20%
+      height: 100%
+      background-color: #000
+      opacity: 0
+      border: 0 solid #d5d5d5
+      box-sizing: content-box
+      transform: translate3d(0, -100%, 0) rotate(45deg)
+      transition: all .4s $easeOutSine
+    &::after
+      top: inherit
+      left: inherit
+      bottom: 0
+      right: 0
+      transform: translate3d(0, 100%, 0) rotate(45deg)
+    &:hover
+      &::before, &::after
+        opacity: 1
+        border: 20px solid #d5d5d5
+        transition: transform .4s $easeOutSine, border .55s .1s $easeOutSine
+      &::before
+        transform: translate3d(0, -50%, 0) rotate(45deg)
+      &::after
+        transform: translate3d(0, 50%, 0) rotate(45deg)
+      h2
+        transform: translate3d(-50%, -100%, 0)
+        transition: all .7s $easeOutExpo
+      p.description
+        opacity: 1
+        transform: translate3d(-50%, -75%, 0)
+        transition: all .8s .2s $easeOutExpo
+    h2
+      position: absolute
+      text-align: center
+      top: 50%
+      left: 50%
+      width: 100%
+      padding: 0 10px
+      height: 1.5em
+      text-transform: uppercase
+      transform: translate3d(-50%, -50%, 0)
+      transition: all 2s $easeOutExpo
+    p.description
+      position: absolute
+      text-align: center
+      top: 65%
+      left: 50%
+      opacity: 0
+      font-size: .8em
+      color: #424242
+      text-transform: uppercase
+      transform: translate3d(-50%, -50%, 0)
+      transition: all .4s $easeOutExpo
+    img
+      opacity: 0
+      min-height: 100%
+      min-width: 100%

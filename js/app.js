@@ -6,30 +6,26 @@
 $(function() {
     var $nav            = $('nav[role="navigation"]'),
         $links          = $nav.find('li a'),
-        $work           = $('.work_figure'),
-        $work_selected  = $('#work_selected'),
-        $back           = $('#back'),
+        $work           = $('[data-work].work_figure'),
         $body           = $('body'),
         allRevealFx     = [],
         configsRevealFx = require('./components/configsRevealFx');
 
     $(document).on('ready load', function() {
-        var effects = configsRevealFx.lr;
-        effects.bgcolor = '#f1f1f1';
         addReveals({
-            items: document.querySelectorAll('[data-reveal]'),
-            container: document.querySelector('.works'),
-            effect: effects,
+            items: document.querySelectorAll('.images'),
+            container: document.querySelector('.works_details'),
+            effect: configsRevealFx.lr,
             scrollEvent: true
         });
         addReveals({
             items: document.querySelectorAll('[data-reveal-section]'),
-            effect: configsRevealFx.lr,
+            effect: configsRevealFx.bt,
             scrollEvent: false
         });
 
         if(location.hash != "") {
-            section(location.hash.replace('#', ''));
+            changeSection(location.hash.replace('#', ''));
         }
     });
 
@@ -42,44 +38,28 @@ $(function() {
             return;
         }
 
-        section(href);
+        changeSection(href);
     });
-
-    function section(section) {
-        $body.removeClass().addClass('section_' + section);
-
-        var $section = $('[data-reveal-section="' + section + '"]');
-        allRevealFx[$section.data('reveal-id')].reveal();
-    }
 
     // $nav.on('click', function() {
     //     $body.removeClass('work_active');
     // });
 
-    $work.on('click', function(e) {
-        e.preventDefault();
-        var work_name    = $(this).data('work'),
-            work_content = $(this).find('.work_content').html().trim();
-
-        $work_selected.html('<a href="#" id="back">✖</a>' + work_content);
-        $back = $('#back');
-
-        $back.on('click', function(e) {
-            e.preventDefault();
-
-            $body.removeClass('work_active');
-        });
-
-        setTimeout(function() {
-            $body.addClass('work_active');
-        }, 10);
-    });
-
     $(document).on('click', function(e) {
         if(e.which === 2) e.preventDefault();
     });
 
+    function changeSection(section) {
+        var isSameSection = $body.hasClass('section_' + section);
+        $body.removeClass().addClass('section_' + section);
 
+        if(isSameSection === false) {
+            var $section = $('[data-reveal-section="' + section + '"]');
+            allRevealFx[$section.data('reveal-id')].reveal();
+        }
+    }
+
+    // TODO: Fix bug count...
     function addReveals(params) { // items, container, effect, scrollEvent
         var container = (params.container) ? scrollMonitor.createContainer(params.container) : scrollMonitor,
             count     = (params.items.length + allRevealFx.length);
