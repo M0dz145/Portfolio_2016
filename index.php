@@ -66,6 +66,7 @@
 <!-- NAVIGATION BAR END -->
 
 <div class="works_details">
+    <a href="#works" id="back-button">qulleulqe.</a>
     <!-- Works details -->
     <div data-work-details="valeuretcapital">
         <div class="content">
@@ -88,23 +89,57 @@
             </p>
         </div>
         <div class="images">
-            <img src="img/valeuretcapital.jpg" alt="img15"/>
-            <img src="img/prixy.jpg" alt="img15"/>
-            <img src="img/immobilis.jpg" alt="img15"/>
-            <img src="img/valeuretcapital.jpg" alt="img15"/>
-            <img src="img/valeuretcapital.jpg" alt="img15"/>
-            <img src="img/valeuretcapital.jpg" alt="img15"/>
-            <img src="img/valeuretcapital.jpg" alt="img15"/>
-            <img src="img/valeuretcapital.jpg" alt="img15"/>
-            <img src="img/valeuretcapital.jpg" alt="img15"/>
-            <img src="img/valeuretcapital.jpg" alt="img15"/>
-            <img src="img/valeuretcapital.jpg" alt="img15"/>
-            <img src="img/valeuretcapital.jpg" alt="img15"/>
-            <img src="img/valeuretcapital.jpg" alt="img15"/>
-            <img src="img/valeuretcapital.jpg" alt="img15"/>
-            <img src="img/valeuretcapital.jpg" alt="img15"/>
-            <img src="img/valeuretcapital.jpg" alt="img15"/>
-            <img src="img/valeuretcapital.jpg" alt="img15"/>
+            <div data-reveal-image data-reveal-class="work_activate">
+                <img src="img/valeuretcapital.jpg" alt="img15"/>
+            </div>
+            <div data-reveal-image data-reveal-class="work_activate">
+                <img src="img/prixy.jpg" alt="img15"/>
+            </div>
+            <div data-reveal-image data-reveal-class="work_activate">
+                <img src="img/immobilis.jpg" alt="img15"/>
+            </div>
+            <div data-reveal-image data-reveal-class="work_activate">
+                <img src="img/valeuretcapital.jpg" alt="img15"/>
+            </div>
+            <div data-reveal-image data-reveal-class="work_activate">
+                <img src="img/valeuretcapital.jpg" alt="img15"/>
+            </div>
+            <div data-reveal-image data-reveal-class="work_activate">
+                <img src="img/valeuretcapital.jpg" alt="img15"/>
+            </div>
+            <div data-reveal-image data-reveal-class="work_activate">
+                <img src="img/valeuretcapital.jpg" alt="img15"/>
+            </div>
+            <div data-reveal-image data-reveal-class="work_activate">
+                <img src="img/valeuretcapital.jpg" alt="img15"/>
+            </div>
+            <div data-reveal-image data-reveal-class="work_activate">
+                <img src="img/valeuretcapital.jpg" alt="img15"/>
+            </div>
+            <div data-reveal-image data-reveal-class="work_activate">
+                <img src="img/valeuretcapital.jpg" alt="img15"/>
+            </div>
+            <div data-reveal-image data-reveal-class="work_activate">
+                <img src="img/valeuretcapital.jpg" alt="img15"/>
+            </div>
+            <div data-reveal-image data-reveal-class="work_activate">
+                <img src="img/valeuretcapital.jpg" alt="img15"/>
+            </div>
+            <div data-reveal-image data-reveal-class="work_activate">
+                <img src="img/valeuretcapital.jpg" alt="img15"/>
+            </div>
+            <div data-reveal-image data-reveal-class="work_activate">
+                <img src="img/valeuretcapital.jpg" alt="img15"/>
+            </div>
+            <div data-reveal-image data-reveal-class="work_activate">
+                <img src="img/valeuretcapital.jpg" alt="img15"/>
+            </div>
+            <div data-reveal-image data-reveal-class="work_activate">
+                <img src="img/valeuretcapital.jpg" alt="img15"/>
+            </div>
+            <div data-reveal-image data-reveal-class="work_activate">
+                <img src="img/valeuretcapital.jpg" alt="img15"/>
+            </div>
         </div>
     </div>
 
@@ -121,7 +156,9 @@
             </p>
         </div>
         <div class="images">
-            <img src="img/immobilis.jpg" alt="img15"/>
+            <div data-reveal-image data-reveal-class="work_activate">
+                <img src="img/immobilis.jpg" alt="img15"/>
+            </div>
         </div>
     </div>
 
@@ -133,7 +170,9 @@
             </p>
         </div>
         <div class="images">
-            <img src="img/prixy.jpg" alt="img18"/>
+            <div data-reveal-image data-reveal-class="work_activate">
+                <img src="img/prixy.jpg" alt="img15"/>
+            </div>
         </div>
     </div>
 
@@ -145,7 +184,9 @@
             </p>
         </div>
         <div class="images">
-            <img src="img/xavierChevalier.jpg" alt="img04"/>
+            <div data-reveal-image data-reveal-class="work_activate">
+                <img src="img/xavierChevalier.jpg" alt="img15"/>
+            </div>
         </div>
     </div>
 
@@ -158,7 +199,9 @@
             </p>
         </div>
         <div class="images">
-            <img src="img/elkyos_2.jpg" alt="img04"/>
+            <div data-reveal-image data-reveal-class="work_activate">
+                <img src="img/elkyos_2.jpg" alt="img15"/>
+            </div>
         </div>
     </div>
 
@@ -171,7 +214,9 @@
             </p>
         </div>
         <div class="images">
-            <img src="img/ludovicBarthelemi.jpg" alt="img04"/>
+            <div data-reveal-image data-reveal-class="work_activate">
+                <img src="img/ludovicBarthelemi.jpg" alt="img15"/>
+            </div>
         </div>
     </div>
 
@@ -182,7 +227,9 @@
             </p>
         </div>
         <div class="images">
-            <img src="img/pf_vik.jpg" alt="img04"/>
+            <div data-reveal-image data-reveal-class="work_activate">
+                <img src="img/pf_vik.jpg" alt="img15"/>
+            </div>
         </div>
     </div>
 
@@ -195,7 +242,9 @@
             </p>
         </div>
         <div class="images">
-            <img src="img/nicolasChevalier.jpg" alt="img18"/>
+            <div data-reveal-image data-reveal-class="work_activate">
+                <img src="img/nicolasChevalier.jpg" alt="img15"/>
+            </div>
         </div>
     </div>
 
@@ -208,7 +257,9 @@
             </p>
         </div>
         <div class="images">
-            <img src="img/elkyos.jpg" alt="img18"/>
+            <div data-reveal-image data-reveal-class="work_activate">
+                <img src="img/elkyos.jpg" alt="img15"/>
+            </div>
         </div>
     </div>
     <!-- Works details END -->
@@ -295,10 +346,10 @@
 </div>
 
 
-<script type="text/javascript" src="js/jQuery.min.js"></script>
-<script type="text/javascript" src="js/anime.min.js"></script>
-<script type="text/javascript" src="js/scrollMonitor.js"></script>
-<script type="text/javascript" src="js/blockReveal.js"></script>
+<script type="text/javascript" src="js/libs/jQuery.min.js"></script>
+<script type="text/javascript" src="js/libs/anime.min.js"></script>
+<script type="text/javascript" src="js/libs/scrollMonitor.js"></script>
+<script type="text/javascript" src="js/libs/blockReveal.js"></script>
 <script type="text/javascript" src="build/js/app.js"></script>
 
 </body>
