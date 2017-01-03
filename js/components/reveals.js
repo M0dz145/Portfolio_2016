@@ -1,16 +1,29 @@
 module.exports = function() {
     var allReveals = [];
+    function isNodeList(nodes) {
+        var stringRepr = Object.prototype.toString.call(nodes);
+
+        return typeof nodes === 'object' &&
+            /^\[object (HTMLCollection|NodeList|Object)\]$/.test(stringRepr) &&
+            (typeof nodes.length === 'number') &&
+            (nodes.length === 0 || (typeof nodes[0] === "object" && nodes[0].nodeType > 0));
+    }
     return {
+        /**
+         * Ajoute un Reveal
+         * @param {} params - items, container, scrollEvent, effect
+         * @returns {Array}
+         */
         add: function(params) {
             var _this     = this,
                 container = (params.container) ? scrollMonitor.createContainer(params.container) : scrollMonitor,
                 count     = allReveals.length;
-            for(var i = 0; i < params.items.length; i++) {
-                var element        = params.items[i],
-                    elementWatcher = container.create(element, -225),
+
+            function addReveal(element, index) {
+                var elementWatcher = container.create(element, -225),
                     RevealElement  = new RevealFx(element, {revealSettings: params.effect});
 
-                $(element).data('reveal-id', (count + i));
+                $(element).data('reveal-id', index);
                 allReveals.push({
                     fxElement: RevealElement,
                     scrollListener: null
@@ -25,9 +38,18 @@ module.exports = function() {
                             this.destroy();
                         }
                     });
-                    allReveals[(count + i)].scrollListener = elementWatcher;
+                    allReveals[index].scrollListener = elementWatcher;
                 }
             }
+
+            if(isNodeList(params.items)) {
+                for(var i = 0; i < params.items.length; i++) {
+                    addReveal(params.items[i], (count + i));
+                }
+            } else if(params.items !== undefined) {
+                addReveal(params.items, count);
+            }
+
             return allReveals;
         },
         // remove: function(id) {
@@ -40,8 +62,6 @@ module.exports = function() {
             return allReveals[id].scrollListener.destroy();
         },
         isInViewport: function(id) {
-            console.log(allReveals);
-            console.log(allReveals[id]);
             return allReveals[id].scrollListener.isInViewport;
         }
     };

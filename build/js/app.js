@@ -36,17 +36,30 @@ module.exports = function(onStart, onCover){
 },{}],2:[function(require,module,exports){
 module.exports = function() {
     var allReveals = [];
+    function isNodeList(nodes) {
+        var stringRepr = Object.prototype.toString.call(nodes);
+
+        return typeof nodes === 'object' &&
+            /^\[object (HTMLCollection|NodeList|Object)\]$/.test(stringRepr) &&
+            (typeof nodes.length === 'number') &&
+            (nodes.length === 0 || (typeof nodes[0] === "object" && nodes[0].nodeType > 0));
+    }
     return {
+        /**
+         * Ajoute un Reveal
+         * @param {} params - items, container, scrollEvent, effect
+         * @returns {Array}
+         */
         add: function(params) {
             var _this     = this,
                 container = (params.container) ? scrollMonitor.createContainer(params.container) : scrollMonitor,
                 count     = allReveals.length;
-            for(var i = 0; i < params.items.length; i++) {
-                var element        = params.items[i],
-                    elementWatcher = container.create(element, -225),
+
+            function addReveal(element, index) {
+                var elementWatcher = container.create(element, -225),
                     RevealElement  = new RevealFx(element, {revealSettings: params.effect});
 
-                $(element).data('reveal-id', (count + i));
+                $(element).data('reveal-id', index);
                 allReveals.push({
                     fxElement: RevealElement,
                     scrollListener: null
@@ -61,9 +74,18 @@ module.exports = function() {
                             this.destroy();
                         }
                     });
-                    allReveals[(count + i)].scrollListener = elementWatcher;
+                    allReveals[index].scrollListener = elementWatcher;
                 }
             }
+
+            if(isNodeList(params.items)) {
+                for(var i = 0; i < params.items.length; i++) {
+                    addReveal(params.items[i], (count + i));
+                }
+            } else if(params.items !== undefined) {
+                addReveal(params.items, count);
+            }
+
             return allReveals;
         },
         // remove: function(id) {
@@ -76,22 +98,31 @@ module.exports = function() {
             return allReveals[id].scrollListener.destroy();
         },
         isInViewport: function(id) {
-            console.log(allReveals);
-            console.log(allReveals[id]);
             return allReveals[id].scrollListener.isInViewport;
         }
     };
 };
 },{}],3:[function(require,module,exports){
-module.exports = function(_reveals) {
+module.exports = function(_reveals, _configsRevealFx) {
     return {
-        change: function(section){
-            var $body = $('body'),
-                section_name = 'section_' + section;
-            if($body.hasClass(section_name) === false) {
-                $body.removeClass().addClass(section_name);
-                var $section = $('[data-reveal-section="' + section + '"]');
-                _reveals.reveal($section.data('reveal-id'));
+        change: function(section) {
+            var $body        = $('body'),
+                section_name = 'section_' + section,
+                workIsShow   = $body.hasClass('work_activate');
+            if($body.hasClass(section_name) === false || workIsShow === true) {
+                if(workIsShow === true) {
+                    var $elActive = $('[data-work-details].activate');
+                    $elActive.addClass('transitionEnd');
+                    $elActive.one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend", function(event) {
+                        console.log('end');
+                        $elActive.removeClass('activate transitionEnd');
+                        $body.removeClass().addClass(section_name);
+                    });
+                } else {
+                    $body.removeClass().addClass(section_name);
+                    var $section = $('[data-reveal-section="' + section + '"]');
+                    _reveals.reveal($section.data('reveal-id'));
+                }
             }
         }
     };
@@ -109,7 +140,7 @@ $(function() {
         worksHasEvent    = false,
         _configsRevealFx = require('./components/configsRevealFx'),
         _reveals         = require('./components/reveals')(),
-        _section         = require('./components/section')(_reveals);
+        _section         = require('./components/section')(_reveals, _configsRevealFx);
 
     $(document).on('ready load', function() {
         /*** REVEALS FOR IMAGES ***/
@@ -154,6 +185,10 @@ $(function() {
                                     _reveals.destroyListener(id);
                                 };
                             });
+                        $('.back-button').on('click', function(e){
+                            e.preventDefault();
+                            _section.change('works');
+                        });
                     });
                 }
 

@@ -1,0 +1,17 @@
+body.work_activate
+  .back-button
+    transform: translate3d(-50%, 0, 0)
+  [data-work-details].activate
+    z-index: 5
+    opacity: 1
+    &::before, &::after, .content, .images
+      transform: translate3d(0, 0, 0)
+    &.transitionEnd
+      z-index: 5
+      &::before, &::after, .content, .images
+        opacity: 0
+        transition: all .5s $easeOutQuint
+      &::before, .content
+        transform: translate3d(-50%, 0, 0)
+      &::after, .images
+        transform: translate3d(50%, 0, 0)

@@ -66,7 +66,10 @@
 <!-- NAVIGATION BAR END -->
 
 <div class="works_details">
-    <a href="#works" id="back-button">qulleulqe.</a>
+    <a href="#works" data-text="Retour"
+       class="back-button button button--text-upper button--border-thin button--winona button--size-s">
+        <span>Retour</span>
+    </a>
     <!-- Works details -->
     <div data-work-details="valeuretcapital">
         <div class="content">
