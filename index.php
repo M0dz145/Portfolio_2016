@@ -67,7 +67,7 @@
 
 <div class="works_details">
     <a href="#works" data-text="Retour"
-       class="back-button button button--text-upper button--border-thin button--winona button--size-s">
+       class="back-button button button--inverted button--text-upper button--border-thin button--winona button--size-s">
         <span>Retour</span>
     </a>
     <!-- Works details -->
@@ -92,54 +92,6 @@
             </p>
         </div>
         <div class="images">
-            <div data-reveal-image data-reveal-class="work_activate">
-                <img src="img/valeuretcapital.jpg" alt="img15"/>
-            </div>
-            <div data-reveal-image data-reveal-class="work_activate">
-                <img src="img/prixy.jpg" alt="img15"/>
-            </div>
-            <div data-reveal-image data-reveal-class="work_activate">
-                <img src="img/immobilis.jpg" alt="img15"/>
-            </div>
-            <div data-reveal-image data-reveal-class="work_activate">
-                <img src="img/valeuretcapital.jpg" alt="img15"/>
-            </div>
-            <div data-reveal-image data-reveal-class="work_activate">
-                <img src="img/valeuretcapital.jpg" alt="img15"/>
-            </div>
-            <div data-reveal-image data-reveal-class="work_activate">
-                <img src="img/valeuretcapital.jpg" alt="img15"/>
-            </div>
-            <div data-reveal-image data-reveal-class="work_activate">
-                <img src="img/valeuretcapital.jpg" alt="img15"/>
-            </div>
-            <div data-reveal-image data-reveal-class="work_activate">
-                <img src="img/valeuretcapital.jpg" alt="img15"/>
-            </div>
-            <div data-reveal-image data-reveal-class="work_activate">
-                <img src="img/valeuretcapital.jpg" alt="img15"/>
-            </div>
-            <div data-reveal-image data-reveal-class="work_activate">
-                <img src="img/valeuretcapital.jpg" alt="img15"/>
-            </div>
-            <div data-reveal-image data-reveal-class="work_activate">
-                <img src="img/valeuretcapital.jpg" alt="img15"/>
-            </div>
-            <div data-reveal-image data-reveal-class="work_activate">
-                <img src="img/valeuretcapital.jpg" alt="img15"/>
-            </div>
-            <div data-reveal-image data-reveal-class="work_activate">
-                <img src="img/valeuretcapital.jpg" alt="img15"/>
-            </div>
-            <div data-reveal-image data-reveal-class="work_activate">
-                <img src="img/valeuretcapital.jpg" alt="img15"/>
-            </div>
-            <div data-reveal-image data-reveal-class="work_activate">
-                <img src="img/valeuretcapital.jpg" alt="img15"/>
-            </div>
-            <div data-reveal-image data-reveal-class="work_activate">
-                <img src="img/valeuretcapital.jpg" alt="img15"/>
-            </div>
             <div data-reveal-image data-reveal-class="work_activate">
                 <img src="img/valeuretcapital.jpg" alt="img15"/>
             </div>

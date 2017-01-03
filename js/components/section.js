@@ -1,4 +1,4 @@
-module.exports = function(_reveals, _configsRevealFx) {
+module.exports = function(_reveals) {
     return {
         change: function(section) {
             var $body        = $('body'),

@@ -10,7 +10,7 @@ $(function() {
         worksHasEvent    = false,
         _configsRevealFx = require('./components/configsRevealFx'),
         _reveals         = require('./components/reveals')(),
-        _section         = require('./components/section')(_reveals, _configsRevealFx);
+        _section         = require('./components/section')(_reveals);
 
     $(document).on('ready load', function() {
         /*** REVEALS FOR IMAGES ***/

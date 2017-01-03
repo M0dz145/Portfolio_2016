@@ -103,7 +103,7 @@ module.exports = function() {
     };
 };
 },{}],3:[function(require,module,exports){
-module.exports = function(_reveals, _configsRevealFx) {
+module.exports = function(_reveals) {
     return {
         change: function(section) {
             var $body        = $('body'),
@@ -140,7 +140,7 @@ $(function() {
         worksHasEvent    = false,
         _configsRevealFx = require('./components/configsRevealFx'),
         _reveals         = require('./components/reveals')(),
-        _section         = require('./components/section')(_reveals, _configsRevealFx);
+        _section         = require('./components/section')(_reveals);
 
     $(document).on('ready load', function() {
         /*** REVEALS FOR IMAGES ***/
