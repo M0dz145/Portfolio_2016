@@ -1,6 +1,8 @@
 body.section_
   &works, &about, &cv, &veille-technologique
     background-position: 0 50%
+    div[role="main"] section
+      transition: opacity .5s $easeOutQuint
     header[role="banner"]
       opacity: 0
       transition: all 1s

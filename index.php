@@ -13,7 +13,10 @@
 
 <!-- BANNIER -->
 <header role="banner">
-    <h1>Port<span>folio</span></h1>
+    <h1>
+        Port<span>folio</span><br>
+        CHEVALIER <span>Xavier</span>
+    </h1>
 </header>
 
 <!-- NAVIGATION BAR -->
@@ -114,6 +117,9 @@
             <div data-reveal-image data-reveal-class="work_activate">
                 <img src="img/immobilis.jpg" alt="img15"/>
             </div>
+            <div data-reveal-image data-reveal-class="work_activate">
+                <img src="img/works/immobilis/03.png" alt="img15"/>
+            </div>
         </div>
     </div>
 
@@ -140,7 +146,22 @@
         </div>
         <div class="images">
             <div data-reveal-image data-reveal-class="work_activate">
-                <img src="img/xavierChevalier.jpg" alt="img15"/>
+                <img src="img/works/xavierChevalier/01.jpg" alt="img15"/>
+            </div>
+            <div data-reveal-image data-reveal-class="work_activate">
+                <img src="img/works/xavierChevalier/02.jpg" alt="img15"/>
+            </div>
+            <div data-reveal-image data-reveal-class="work_activate">
+                <img src="img/works/xavierChevalier/03.jpg" alt="img15"/>
+            </div>
+            <div data-reveal-image data-reveal-class="work_activate">
+                <img src="img/works/xavierChevalier/04.jpg" alt="img15"/>
+            </div>
+            <div data-reveal-image data-reveal-class="work_activate">
+                <img src="img/works/xavierChevalier/05.jpg" alt="img15"/>
+            </div>
+            <div data-reveal-image data-reveal-class="work_activate">
+                <img src="img/works/xavierChevalier/06.jpg" alt="img15"/>
             </div>
         </div>
     </div>
