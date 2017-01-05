@@ -183,8 +183,7 @@ $(function() {
                                 if(_reveals.isInViewport(id)){
                                     _reveals.reveal(id);
                                     _reveals.destroyListener(id);
-                                }
-                                // Todo: Reinitialize reveals watchers
+                                };
                             });
                         $('.back-button').on('click', function(e){
                             e.preventDefault();

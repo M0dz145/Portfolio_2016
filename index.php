@@ -91,7 +91,7 @@
                 gestions des droits/affectations, gestions des programmes immobiliers...
             </p>
             <p>
-                Plus d'information disponible sur cette adresse
+                Plus d'information disponible à cette adresse.
             </p>
         </div>
         <div class="images">
@@ -105,12 +105,22 @@
         <div class="content">
             <h1>Immobilis</h1>
             <p>
-                Immobilis est un projet conçu par 3 personnes dans le cadre scolaire de terminale. Ce site
-                rescence toutes les annonces immobilières préalablement crées par des propriétaires
-                d'appartements/maisons...
+                Immobilis est un projet développé par des étudiants du lycée Ella Fitzgerald à Saint-Romain en Gal.
+                Conçut par 3 élèves de classe Terminale Science Technologique du Management et de la Gestion
+                option Gestion des Systèmes d'Informations :
             </p>
+            <ul>
+                <li>Cléa ROSADO</li>
+                <li>Balthazar DERDERIAN</li>
+                <li>Xavier CHEVALIER</li>
+            </ul>
             <p>
                 J'ai développé tout l'aspect graphique du site et une très grande partie de ses fonctionnalités.
+            </p>
+            <p>
+                Nous avons décidé de développer un site web pour une agence immobilière nommé Immobilis ressenssant l'intégralité des annonces de cette organisation.
+                Un site totalement intéractif permettant aux visiteurs de visionner les annonces immobilières et, par la suite, de s'inscrire pour procéder à une enchère ou un achat immédiat.
+                Les professionnels souhaitant poster une annonce peuvent également s'inscrirent par le bais de formulaire mis à disposition et ensuite poster une nouvelle annonce.
             </p>
         </div>
         <div class="images">
