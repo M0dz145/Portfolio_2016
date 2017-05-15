@@ -14,8 +14,8 @@ $(function() {
 
     $(document).on('ready load', function() {
         /*** REVEALS FOR IMAGES ***/
-        $('[data-work-details]').each(function(){
-            var $this = $(this).get(0),
+        $('[data-work-details]').each(function() {
+            var $this   = $(this).get(0),
                 $images = $this.children[1].children; // Récupère les images
 
             _reveals.add({
@@ -49,13 +49,20 @@ $(function() {
                             .addClass('activate')
                             .find('[data-reveal-image]')
                             .each(function() {
-                                var id = $(this).data('reveal-id');
-                                if(_reveals.isInViewport(id)){
-                                    _reveals.reveal(id);
-                                    _reveals.destroyListener(id);
-                                };
+                                var $image = $(this),
+                                    id     = $image.data('reveal-id');
+                                setTimeout(function() {
+                                    console.log($(window).width() / 2)
+                                    console.log($image.offset().left)
+                                    console.log($image.offset().left - ($(window).width() / 2))
+                                    console.log(($(window).width() / 2) === $image.offset().left)
+                                    if(_reveals.isInViewport(id) || ($(window).width() / 2) === $image.offset().left || $image.offset().left - ($(window).width() / 2) === -8.5) {
+                                        _reveals.reveal(id);
+                                        _reveals.destroyListener(id);
+                                    }
+                                }, 450);
                             });
-                        $('.back-button').on('click', function(e){
+                        $('.back-button').on('click', function(e) {
                             e.preventDefault();
                             _section.change('works');
                         });

@@ -2,10 +2,11 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>| Portfolio 2016 - CHEVALIER Xavier |</title>
+    <title>| CHEVALIER Xavier - Portfolio 2017 |</title>
     <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
     <meta name="copyright" content="© chevalier-xavier.fr"/>
     <meta name="web_author" content="chevalier xavier"/>
+    <link rel="icon" type="image/jpg" href="img/backgrounds/forest_fire.jpg" />
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="build/css/app.css"/>
 </head>
@@ -76,25 +77,36 @@
         <!-- Works details -->
         <div data-work-details="valeuretcapital">
             <div class="content">
-                <!--            Valeur et Capital est une entreprise de Holding regroupant Valority, Pure Gestion, Les Belles Années, Valofi, Valority Habitat, Optiméa Crédit, Pure Transaction et Pure Invest.-->
-                <!--            J'ai intégré une équipe d'une dizaine de développeur, et participé activement sur des projets importants en adoptant la méthode Agile et en respectant les différentes contraintes imposées (temps imparti, matrice des tâches, conventions de nommage...).-->
-                <!--            Durant ce stage, j'ai développé une application de gestion des appels téléphoniques pour l'entreprise Pure Gestion. Cette application sous AngularJS (framework Javascript) et CodeIgniter (framework PHP adopté par l'entreprise), à été conçut pour facilité le travail du centre d'appel et ainsi permettre un suivit des contacts grâce au système d'historisation des appels.-->
                 <h1>Echo</h1>
+                <!--                <p>-->
+                <!--                    <u>Valeur et Capital</u> est une entreprise de Holding regroupant <i>Valority</i>,-->
+                <!--                    <i>Pure Gestion</i>, <i>Les Belles Années</i>, <i>Valofi</i>, <i>Valority Habitat</i>,-->
+                <!--                    <i>Optiméa Crédit</i>, <i>Pure Transaction</i> et <i>Pure Invest</i>.-->
+                <!--                </p>-->
+                <!--                <p>-->
+                <!--                    J'ai intégré une équipe d'une dizaine de développeur, et participé activement sur des projets-->
+                <!--                    importants en adoptant la méthode Agile et en respectant les différentes contraintes imposées (temps-->
+                <!--                    imparti, matrice des tâches, conventions de nommage...).-->
+                <!--                </p>-->
+                <!--                <p>-->
+                <!--                    Durant ce stage, j'ai développé une application de gestion des appels téléphoniques pour-->
+                <!--                    l'entreprise Pure Gestion. Cette application sous AngularJS (framework Javascript) et CodeIgniter-->
+                <!--                    (framework PHP adopté par l'entreprise), à été conçu pour faciliter le travail du centre d'appel et-->
+                <!--                    ainsi permettre un suivit des contacts grâce au système d'historisation des appels.-->
+                <!--                </p>-->
                 <p>
-                    Echo est une application de gestion des contacts de "Valority | Valeur et Capital" étant
-                    disponible seulement sur l'intranet de l'entreprise, destinée au service de location de Pure
-                    Gestion.
+                    Echo est une <u>application de gestion des contacts</u> de "Valority | Valeur et Capital", développé
+                    lors de mon stage de première année de BTS SIO. Cette application est disponible seulement sur
+                    l'<u>intranet de l'entreprise</u>, destinée au service de location de <i>Pure Gestion</i>.
                 </p>
                 <p>
-                    Cette application permettra aux utilisateurs de regrouper les données des contacts et de gérer
-                    les différentes demandes de ces derniers.
+                    Développé en AngularJS et CodeIgniter, Echo permet aux utilisateurs de
+                    <u>regrouper les données des contacts</u> et de <u>gérer les différentes demandes</u> de ces
+                    derniers.
                 </p>
                 <p>
-                    De nombreuses fonctionnalitées ont été développer pour assurer l'historisation d'appels, la
-                    gestions des droits/affectations, gestions des programmes immobiliers...
-                </p>
-                <p>
-                    Plus d'information disponible à cette adresse.
+                    De nombreuses fonctionnalités ont été développées pour assurer l'<u>historisation d'appels</u>, la
+                    <u>gestions des droits/affectations</u>, <u>gestions des programmes immobiliers</u>...
                 </p>
             </div>
             <div class="images">
@@ -109,8 +121,9 @@
                 <h1>Immobilis</h1>
                 <p>
                     Immobilis est un projet développé par des étudiants du lycée Ella Fitzgerald à Saint-Romain en Gal.
-                    Conçut par 3 élèves de classe Terminale Science Technologique du Management et de la Gestion
-                    option Gestion des Systèmes d'Informations :
+                    Conçu par <u>3 élèves</u> de classe Terminale <i>Science Technologique du Management et de la
+                        Gestion
+                        option Gestion des Systèmes d'Informations</i>:
                 </p>
                 <ul>
                     <li>Cléa ROSADO</li>
@@ -121,13 +134,22 @@
                     J'ai développé tout l'aspect graphique du site et une très grande partie de ses fonctionnalités.
                 </p>
                 <p>
-                    Nous avons décidé de développer un site web pour une agence immobilière nommé Immobilis ressenssant
+                    Nous avons décidé de développer un site web pour une agence immobilière nommée Immobilis recensant
                     l'intégralité des annonces de cette organisation.
+                </p>
+                <p>
                     Un site totalement intéractif permettant aux visiteurs de visionner les annonces immobilières et,
                     par la suite, de s'inscrire pour procéder à une enchère ou un achat immédiat.
-                    Les professionnels souhaitant poster une annonce peuvent également s'inscrirent par le bais de
+                </p>
+                <p>
+                    Les professionnels souhaitant poster une annonce peuvent également s'inscrire par le bais de
                     formulaire mis à disposition et ensuite poster une nouvelle annonce.
                 </p>
+                <a href="http://immobilis.chevalier-xavier.fr/annonce.php"
+                   target="_blank"
+                   class="button--text-upper button--size-l">
+                    Accéder au site
+                </a>
             </div>
             <div class="images">
                 <div data-reveal-image data-reveal-class="work_activate">
@@ -143,8 +165,28 @@
             <div class="content">
                 <h1>Prixy</h1>
                 <p>
-                    Prixy project
+                    Les dirigeants de l'entreprise Prixy souhaitent disposer d’un site web permettant aux clients de
+                    consulter et de s’inscrire aux différentes formations en ligne.
                 </p>
+                <p>
+                    Cette application permet de <u>consulter les formations et les dates de sessions</u> (planning)
+                    ainsi que la possibilité de <u>s’inscrire à une session d’une formation</u>.
+                </p>
+                <p>
+                    Développé en une semaine sous les frameworks <strong>AngularJS</strong> et <strong>Symfony3</strong>,
+                    cette application respecte les
+                    techniques et méthodologies du <strong>Design Atomic</strong>, <strong>BEM</strong>,
+                    <strong>OOCSS</strong>...
+                </p>
+                <p>
+                    De plus, le site Prixy est <u>responsive design</u> et l'<u>internationalisation</u> est disponible.
+                </p>
+
+                <a href="http://labs.chevalier-xavier.fr/prixy-2017/front-end"
+                   target="_blank"
+                   class="button--text-upper button--size-l">
+                    Accéder au site
+                </a>
             </div>
             <div class="images">
                 <div data-reveal-image data-reveal-class="work_activate">
@@ -159,36 +201,63 @@
                 <p>
                     Ceci est mon portfolio principal.
                 </p>
+                <p>
+                    La conception de ce site s'est faite en deux étapes distincte:
+                </p>
+                <ul>
+                    <li>Maquettage et réflexion de la production (~6 mois)</li>
+                    <li>Et le développement</li>
+                </ul>
+                <p>
+                    Il intègre le format d'image vectoriel <u>SVG</u>, ainsi que deux canvas utilisant la librairie
+                    <u>ThreeJS</u>.
+                </p>
+
+                <a href="http://chevalier-xavier.fr"
+                   target="_blank"
+                   class="button--text-upper button--size-l">
+                    Accéder au site
+                </a>
             </div>
             <div class="images">
                 <div data-reveal-image data-reveal-class="work_activate">
-                    <img src="img/works/xavierChevalier/01.jpg" alt="img15"/>
+                    <img src="img/works/xavierchevalier/01.jpg" alt="img15"/>
                 </div>
                 <div data-reveal-image data-reveal-class="work_activate">
-                    <img src="img/works/xavierChevalier/02.jpg" alt="img15"/>
+                    <img src="img/works/xavierchevalier/02.jpg" alt="img15"/>
                 </div>
                 <div data-reveal-image data-reveal-class="work_activate">
-                    <img src="img/works/xavierChevalier/03.jpg" alt="img15"/>
+                    <img src="img/works/xavierchevalier/03.jpg" alt="img15"/>
                 </div>
                 <div data-reveal-image data-reveal-class="work_activate">
-                    <img src="img/works/xavierChevalier/04.jpg" alt="img15"/>
+                    <img src="img/works/xavierchevalier/04.jpg" alt="img15"/>
                 </div>
                 <div data-reveal-image data-reveal-class="work_activate">
-                    <img src="img/works/xavierChevalier/05.jpg" alt="img15"/>
+                    <img src="img/works/xavierchevalier/05.jpg" alt="img15"/>
                 </div>
                 <div data-reveal-image data-reveal-class="work_activate">
-                    <img src="img/works/xavierChevalier/06.jpg" alt="img15"/>
+                    <img src="img/works/xavierchevalier/06.jpg" alt="img15"/>
                 </div>
             </div>
         </div>
 
         <div data-work-details="elkyos_2">
             <div class="content">
+                <h1>Elkyos 2015</h1>
                 <p>
                     Elkyos est un projet MMORPG se basant sur un univers médiéval fantastique avec une légère touche
-                    de steampunk. Anciennement chargé de tout l'apsect graphique du site, j'ai du quitter
+                    de steampunk.
+                </p>
+                <p>
+                    Anciennement chargé de tout l'aspect graphique du site, j'ai dû quitter
                     prématurément le projet après ma 11ème version.
                 </p>
+
+                <a href="http://labs.chevalier-xavier.fr/Elkyos-v11"
+                   target="_blank"
+                   class="button--text-upper button--size-l">
+                    Accéder au site
+                </a>
             </div>
             <div class="images">
                 <div data-reveal-image data-reveal-class="work_activate">
@@ -199,11 +268,18 @@
 
         <div data-work-details="ludovicBarthelemi">
             <div class="content">
+                <h1>Portfolio Ludovic Barthelemi</h1>
                 <p>
                     Portfolio de Ludovic Barthelemi, jeune étudiant en BTS Systèmes Informatiques aux Organisations,
-                    nous avons collaborés pour réaliser un portfolio avec un système de navigation original et bien
+                    nous avons collaboré pour réaliser un portfolio avec un système de navigation original et bien
                     pensé.
                 </p>
+
+                <a href="http://portfolio1.ludovic-barthelemi.fr"
+                   target="_blank"
+                   class="button--text-upper button--size-l">
+                    Accéder au site
+                </a>
             </div>
             <div class="images">
                 <div data-reveal-image data-reveal-class="work_activate">
@@ -214,9 +290,16 @@
 
         <div data-work-details="pf_vik">
             <div class="content">
+                <h1>Portfolio Vik Project</h1>
                 <p>
                     Ce projet est un portfolio non terminé avec un système de navigation original et interactif.
                 </p>
+
+                <a href="http://chevalier-xavier.fr/Portfolio"
+                   target="_blank"
+                   class="button--text-upper button--size-l">
+                    Accéder au site
+                </a>
             </div>
             <div class="images">
                 <div data-reveal-image data-reveal-class="work_activate">
@@ -227,10 +310,16 @@
 
         <div data-work-details="nicolasChevalier">
             <div class="content">
+                <h1>Portfolio Nicolas Chevalier</h1>
                 <p>
-                    Portfolio de Nicolas Chevalier, jeune développeur d'applications, mais également mon frère ainé.
+                    Portfolio de Nicolas Chevalier, jeune analyste programmeur, mais également mon frère ainé.
+                </p>
+                <p>
                     Avec ses idées, et mon envie d'un design clair/épuré, j'ai pu développer l'aspect graphique du
                     site.
+                </p>
+                <p>
+                    Le site n'est malheureusement plus accessible.
                 </p>
             </div>
             <div class="images">
@@ -242,11 +331,21 @@
 
         <div data-work-details="elkyos">
             <div class="content">
+                <h1>Elkyos 2016</h1>
                 <p>
                     Elkyos est un projet MMORPG se basant sur un univers médiéval fantastique avec une légère touche
-                    de steampunk. Anciennement chargé de tout l'apsect graphique du site, j'ai du quitter
-                    prématurément le projet après ma 11ème version.
+                    de steampunk.
                 </p>
+                <p>
+                    Après avoir produit un site en 2015 pour Elkyos, cette organisation m'a demandé une refonte visuel
+                    de ce site.
+                </p>
+
+                <a href="http://labs.chevalier-xavier.fr/Elkyos"
+                   target="_blank"
+                   class="button--text-upper button--size-l">
+                    Accéder au site
+                </a>
             </div>
             <div class="images">
                 <div data-reveal-image data-reveal-class="work_activate">
@@ -261,41 +360,45 @@
         <!-- SECTION WORKS -->
         <section class="works" data-reveal-section="works">
             <!-- Works figures -->
-            <div data-work="valeuretcapital" class="work_figure col-md-4">
+            <div data-work="valeuretcapital" class="work_figure"
+                 style="background-image: url('img/valeuretcapital.jpg')">
                 <h2>Projet <span>Echo</span></h2>
-                <p class="description">Application de gestion des appels téléphoniques - STAGE</p>
-            </div>
-            <div data-work="immobilis" class="work_figure col-md-4">
+                <p class="description">Application de gestion <br>des appels téléphoniques - STAGE</p>
+            </div><!--
+            --><div data-work="immobilis" class="work_figure" style="background-image: url('img/immobilis.jpg')">
                 <h2>Projet <span>Immobilis</span></h2>
-                <p class="description">Immobilis est un projet étudiant de BAC</p>
-            </div>
-            <div data-work="prixy" class="work_figure col-md-4">
+                <p class="description">Immobilis est un <br>projet étudiant de BAC</p>
+            </div><!--
+            --><div data-work="prixy" class="work_figure" style="background-image: url('img/prixy.jpg')">
                 <h2>Projet <span>Prixy</span></h2>
-                <p class="description">Prixy est un projet étudiant de BTS</p>
-            </div>
-            <div data-work="xavierChevalier" class="work_figure col-md-4">
+                <p class="description">Prixy est un <br>projet étudiant de BTS</p>
+            </div><!--
+            --><div data-work="xavierChevalier" class="work_figure"
+                 style="background-image: url('img/xavierChevalier.jpg')">
                 <h2>Portfolio <span>principal</span></h2>
                 <p class="description">Mon portfolio actuel</p>
-            </div>
-            <div data-work="elkyos_2" class="work_figure col-md-4">
-                <h2>Design <span>Elkyos</span></h2>
-                <p class="description">Elkyos est un projet MMORPG médiéval fantastique</p>
-            </div>
-            <div data-work="ludovicBarthelemi" class="work_figure col-md-4">
+            </div><!--
+            --><div data-work="elkyos_2" class="work_figure" style="background-image: url('img/elkyos_2.jpg')">
+                <h2>Elkyos <span>2015</span></h2>
+                <p class="description">Elkyos est un <br>projet MMORPG médiéval <br>fantastique</p>
+            </div><!--
+            --><div data-work="ludovicBarthelemi" class="work_figure"
+                 style="background-image: url('img/ludovicBarthelemi.jpg')">
                 <h2>Ludovic <span>Barthelemi</span></h2>
-                <p class="description">Portfolio étudiant BTS SIO</p>
-            </div>
-            <div data-work="pf_vik" class="work_figure col-md-4">
-                <h2>Portfolio <span>Vik project</span></h2>
-                <p class="description">Portfolio navigation original & intéractif</p>
-            </div>
-            <div data-work="nicolasChevalier" class="work_figure col-md-4">
+                <p class="description">Portfolio étudiant <br>BTS SIO</p>
+            </div><!--
+            --><div data-work="pf_vik" class="work_figure" style="background-image: url('img/pf_vik.jpg')">
+                <h2>Portfolio <br><span>Vik project</span></h2>
+                <p class="description">Portfolio navigation <br>original & intéractif</p>
+            </div><!--
+            --><div data-work="nicolasChevalier" class="work_figure"
+                 style="background-image: url('img/nicolasChevalier.jpg')">
                 <h2>Nicolas <span>Chevalier</span></h2>
-                <p class="description">Portfolio développeur d'applications</p>
-            </div>
-            <div data-work="elkyos" class="work_figure col-md-4">
-                <h2>Design <span>Elkyos</span></h2>
-                <p class="description">Elkyos est un projet MMORPG médiéval fantastique</p>
+                <p class="description">Portfolio développeur <br>d'applications</p>
+            </div><!--
+            --><div data-work="elkyos" class="work_figure" style="background-image: url('img/elkyos.jpg')">
+                <h2>Elkyos <span>2016</span></h2>
+                <p class="description">Elkyos est un <br>projet MMORPG médiéval <br>fantastique</p>
             </div>
             <!-- Works figures END -->
         </section>
@@ -325,8 +428,9 @@
                     <li>Introduction</li> <!-- <a href="#vt-intro"> -->
                     <li>OOCSS</li>
                     <li>BEM</li>
-                    <li>La pertinance de BEM</li>
                     <li>Atomic Design</li>
+                    <li>SASS/SCSS</li>
+                    <li>Conclusion</li>
                 </ol>
             </div>
 
@@ -334,15 +438,12 @@
                 <h3>1. Introduction</h3>
                 <p>
                     Depuis plusieurs années, je développe des sites et applications web pour des particuliers et
-                    professionnels.
-                    Les projets prenant de l'ampleur, je me suis intéressé aux différentes méthodologies et
-                    architectures existantes
-                    afin de maintenir au mieux le design de mes produits.
+                    professionnels. Les projets prenant de l'ampleur, je me suis intéressé aux différentes méthodologies
+                    et architectures existantes afin de maintenir au mieux le design de mes produits.
                 </p>
                 <p>
                     Du nommage des classes à l'architecture des feuilles de style en passant par les technologies et
-                    outils,
-                    nous verrons comment entretenir un design d'application web avec ces derniers.
+                    outils, nous verrons comment <u>entretenir un design d'application web</u> avec ces derniers.
                 </p>
             </div>
 
@@ -350,14 +451,13 @@
                 <h3>2. OOCSS</h3>
                 <p>
                     OOCSS, l'acronyme de « Object Oriented CSS », est un ensemble de bonnes pratiques initiées par
-                    Nicole
-                    Sullivan.
+                    Nicole Sullivan.
                 </p>
                 <p>
                     Le concept de l'OOCSS est de repérer les « objets CSS » afin de créer des classes réutilisables.
                     <br>
                     La particularité de cette méthodologie est de prendre le design comme point de départ. Dans un
-                    premier temps, on repère les répétitions visuelles, puis on les nommes.
+                    premier temps, on repère les répétitions visuelles, puis on les nomme.
                 </p>
                 <p>
                     Lorsque la pratique OOCSS est bien faite, il est possible d'ajouter des morceaux entiers dans le
@@ -477,7 +577,7 @@
 
                 <p>
                     Le site officiel prend soin de préciser que seuls comptent les concepts, la syntaxe restant libre.
-                    Suite à celà, j'ai moi-même décidé d'une convention de nommage plus clair à mon goût:
+                    Suite à celà, j'ai moi-même décidé d'une convention de nommage plus claire à mon goût:
                 </p>
                 <pre>
                     <code class="css">
@@ -488,7 +588,6 @@
                     </code>
                 </pre>
 
-                <h3>4. Pertinence de BEM</h3>
                 <p>
                     BEM permet de ne jamais aboutir à un code comme celui-ci:
                 </p>
@@ -503,32 +602,34 @@
                     </code>
                 </pre>
 
+                <p>
+                    Voici un exemple de l'utilisation de BEM dans une structure HTML:
+                </p>
                 <pre>
                     <code class="html">
-&lt;div class="BodyLayout">
-    &lt;main class="BodyLayout-mainContent">
-        &lt;article class="MainContent">&lt;!-- Content here… -->&lt;/article>
+&lt;div class="bodyLayout">
+    &lt;main class="bodyLayout__mainContent">
+        &lt;article class="mainContent">&lt;!-- Content here… -->&lt;/article>
     &lt;/main>
-    &lt;div class="BodyLayout-sidebar Sidebar">&lt;!-- Widgets here… -->&lt;/div>
+    &lt;div class="bodyLayout__sidebar sidebar">&lt;!-- Widgets here… -->&lt;/div>
 &lt;/div>
                     </code>
                 </pre>
 
             </div>
 
-            <h3>5. Atomic Design</h3>
-
+            <h3>4. Atomic Design</h3>
             <figure>
-                <img src="img/veille-technologique/atomic-design.png" alt="Atomic Design">
-                <figcaption>Concepte inventé par Brad Frost</figcaption>
+                <img src="img/veille-technologique/atomic-design-abstract-concrete.png" alt="Atomic Design">
+                <figcaption>Concept inventé par Brad Frost</figcaption>
             </figure>
 
             <hr>
 
             <h3>Atomes</h3>
             <p>
-                Le premier niveau correspond aux atomes. On part de l’abstrait : des éléments simples comme les balises
-                de titre (h1 à h6), de formulaire (input, label, button), constitueront ce niveau.
+                Le premier niveau correspond aux atomes. On part de l’abstrait: des éléments simples comme les balises
+                de titre (<i>h1 à h6</i>), de formulaire (<i>input, label, button</i>), constitueront ce niveau.
             </p>
             <figure>
                 <img src="img/veille-technologique/atoms.jpg" alt="Atomic Design">
@@ -571,19 +672,123 @@
                 <img src="img/veille-technologique/page.jpg" alt="Atomic Design">
             </firgure>
 
-            <h3>Exemples</h3>
+            <h3>Exemple</h3>
+            <p>
+                Voici un exemple de conception de l'application « Instagram » de Facebook en atomic design:
+            </p>
             <figure>
                 <img src="img/veille-technologique/instagram-atomic.png" alt="Design atomic">
+            </figure>
+
+            <div class="page">
+                <h3>5. SASS/SCSS</h3>
+                <p>
+                    Il y a quelques années, les développeurs Hampton Catlin et Nathan Weizenbaum ont proposé une
+                    meilleure façon de gérer des feuilles de style complexes. En effet, ils ont conçu une nouvelle
+                    syntaxe de feuilles de style permettant d'écrire et de gérer un CSS toujours plus complexe, en
+                    utilisant un <u>préprocesseur</u> (Gulp, Grunt...).
+                </p>
+                <p>
+                    Cette syntaxe se nomme SASS, pour « Syntactically Awesome Style Sheets ». La version 3.0 de SASS a
+                    introduit une nouvelle syntaxe plus proche du CSS classique appelée <u>SCSS</u> pour « Sassy CSS ».
+                </p>
+                <p>
+                    Cette syntaxe offre donc de nombreux outils permettant de travailler plus rapidement et aussi
+                    d'offrir un code plus propre et plus intelligent.
+                </p>
+
+                <hr>
+
+                <p>
+                    Voici un CSS habituel:
+                </p>
+                <pre>
+                    <code class="css">
+/* code CSS habituel */
+
+body.home .media-unit {
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+body.home .media-unit .right {
+  border-left: 1px solid #ccc;
+}
+body.home .media-unit .right h1 {
+  font-size: 24px;
+}
+                    </code>
+                </pre>
+                <p>
+                    Nous remarquons rapidement que le CSS peut-être parfois très répétitif et ne nous aide pas à
+                    comprendre les relations unissant les éléments HTML auxquels nous appliquons un style.
+                </p>
+                <p>
+                    Un des principaux atout de SASS est l'imbrication des éléments CSS (<i>Classes et ids</i>):
+                </p>
+                <pre>
+                    <code class="sass">
+/* code imbriqué */
+
+body.home {
+  .media-unit {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    .right {
+      border-left: 1px solid #ccc;
+      h1 {
+        font-size: 24px;
+      }
+    }
+  }
+}
+                    </code>
+                </pre>
+                <p>
+                    Nous retrouvons également les importations <code>@import</code> permettant de respecter
+                    l'architecture du Design Atomic:
+                </p>
+                <pre>
+                    <code class="sass">
+@import "_atoms";
+@import "_molecules";
+@import "_organisms";
+@import "_templates";
+@import "_pages";
+                    </code>
+                </pre>
+
+            </div>
+
+            <h3>6. Conclusion</h3>
+            <div class="col-md-6">
+                <p>
+                    Après avoir essayé toutes ces technologies et méthodologies, j'adapte ces dernières à tous mes
+                    nouveaux projets afin d'avoir une architecture et une cohérence parfaite pour les styles de mes
+                    applications.
+                </p>
+                <p>
+                    Malheureusement, je n'ai pas encore pu les essayer pour un projet de groupe. Ces méthodes sont
+                    extrêmement difficiles à mettre en place et la réalisation d'un produit avec ces dernières nécessite
+                    un temps d'apprentissage et d'essai.
+                </p>
+                <p>
+                    Pour finir, voici ci-contre une de mes réalisations <u>Atomic Design, OOCSS, BEM</u>. Nous pouvons
+                    constater
+                    le nombre conséquent de fichiers montrant que le site est entièrement sémentiqué. Nous constatons
+                    clairement les différents éléments du site sans aucune difficulté à les trouver lors d'une
+                    recherche.
+                </p>
+            </div>
+            <figure>
+                <img class="col-md-6" src="img/veille-technologique/prixy-atomic-design.jpg" alt="Prixy atomic design">
+                <figcaption>Projet Prixy 2017 - BTS SIO</figcaption>
             </figure>
         </section>
         <!-- SECTION VEILLE TECHNOLOGIQUE END-->
 
         <!-- SECTION CV -->
         <section class="cv" data-reveal-section="cv">
-            <h2><span>Curriculum</span> Vitae</h2>
-            <p>
-                Voici mon CV
-            </p>
+            <img src="img/CV-2017.jpg" alt="CV">
         </section>
         <!-- SECTION CV END-->
     </div>

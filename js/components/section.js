@@ -8,8 +8,7 @@ module.exports = function(_reveals) {
                 if(workIsShow === true) {
                     var $elActive = $('[data-work-details].activate');
                     $elActive.addClass('transitionEnd');
-                    $elActive.one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend", function(event) {
-                        console.log('end');
+                    $elActive.one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend", function() {
                         $elActive.removeClass('activate transitionEnd');
                         $body.removeClass().addClass(section_name);
                     });
