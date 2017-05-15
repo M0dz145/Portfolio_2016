@@ -1,4 +1,75 @@
+/*
+
+Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-license.org/
+
+*/
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,200);
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #23241f; }
+
+.hljs,
+.hljs-tag,
+.hljs-subst {
+  color: #f8f8f2; }
+
+.hljs-strong,
+.hljs-emphasis {
+  color: #a8a8a2; }
+
+.hljs-bullet,
+.hljs-quote,
+.hljs-number,
+.hljs-regexp,
+.hljs-literal,
+.hljs-link {
+  color: #ae81ff; }
+
+.hljs-code,
+.hljs-title,
+.hljs-section,
+.hljs-selector-class {
+  color: #a6e22e; }
+
+.hljs-strong {
+  font-weight: bold; }
+
+.hljs-emphasis {
+  font-style: italic; }
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-name,
+.hljs-attr {
+  color: #f92672; }
+
+.hljs-symbol,
+.hljs-attribute {
+  color: #66d9ef; }
+
+.hljs-params,
+.hljs-class .hljs-title {
+  color: #f8f8f2; }
+
+.hljs-string,
+.hljs-type,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-selector-id,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-addition,
+.hljs-variable,
+.hljs-template-variable {
+  color: #e6db74; }
+
+.hljs-comment,
+.hljs-deletion,
+.hljs-meta {
+  color: #75715e; }
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -28,6 +99,14 @@ h1 {
   font-weight: 200; }
   h1 span {
     font-weight: 400; }
+
+h3 {
+  padding-bottom: 25px; }
+
+code {
+  border-radius: 5px;
+  padding: 2px 5px;
+  background-color: rgba(0, 0, 0, 0.1); }
 
 a {
   color: #333; }
@@ -411,8 +490,6 @@ div[role="main"] section {
     width: 100%;
     height: 100%;
     opacity: 0;
-    -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
     background-size: cover;
     background-position: center;
     transition: opacity 0s .4s linear; }
@@ -528,21 +605,65 @@ section.about {
         line-height: 20px; } }
 
 section.veille-technologique {
-  color: #fff;
+  color: #000;
   padding: 40px 100px;
-  background-color: #a1a1a1; }
+  background-color: #f4f3db; }
   section.veille-technologique::before {
-    background-image: url("../../img/backgrounds/moulin.jpg"); }
+    content: none; }
+  section.veille-technologique .page {
+    margin-top: 15vh;
+    min-height: 55vh; }
+  section.veille-technologique img {
+    display: block;
+    margin: 0 auto; }
+    section.veille-technologique img.full-width {
+      width: 100%; }
+  section.veille-technologique strong {
+    font-weight: 800; }
+  section.veille-technologique ul.list--inner, section.veille-technologique ol.list--inner {
+    padding-top: 0;
+    padding-left: 45px;
+    padding-bottom: 25px; }
+  section.veille-technologique ol {
+    padding-top: 25px;
+    padding-left: 25px; }
+    section.veille-technologique ol li {
+      list-style: decimal inside;
+      padding-bottom: 10px; }
+  section.veille-technologique figure {
+    width: 100%;
+    padding: 0 1em 25px;
+    text-align: center; }
+    section.veille-technologique figure img {
+      max-width: 100%;
+      margin: 0 auto .5em; }
+    section.veille-technologique figure figcaption {
+      font-size: .75em;
+      font-style: italic;
+      color: #808080;
+      max-width: 37rem;
+      margin: 0 auto;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 0.5rem; }
   section.veille-technologique h2 {
     text-align: center;
     font-size: 1.8em;
-    margin-top: 10vw;
-    margin-bottom: 60px; }
+    margin-top: 5vh; }
     section.veille-technologique h2 span {
       font-weight: 200; }
   section.veille-technologique p {
     text-align: justify;
-    line-height: 45px; }
+    line-height: 45px;
+    padding: 0 20px 25px; }
+  section.veille-technologique h3 {
+    color: #be6700;
+    font-size: 2em;
+    line-height: 1.2;
+    position: relative;
+    margin: 2em 0 0.5em;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #100; }
 
 section.cv {
   color: #fff;
@@ -587,14 +708,14 @@ body.section_works, body.section_about, body.section_cv, body.section_veille-tec
         fill: #fff; }
 
 body.section_works nav[role="navigation"] {
-  width: 30%;
-  -webkit-transform: translate3d(-166.68%, 0, 0);
-          transform: translate3d(-166.68%, 0, 0); }
+  width: 20%;
+  -webkit-transform: translate3d(-250%, 0, 0);
+          transform: translate3d(-250%, 0, 0); }
 
 body.section_works div[role="main"] {
-  width: 70%;
-  -webkit-transform: translate3d(42.82%, 0, 0);
-          transform: translate3d(42.82%, 0, 0); }
+  width: 80%;
+  -webkit-transform: translate3d(25%, 0, 0);
+          transform: translate3d(25%, 0, 0); }
 
 body.section_works section.works {
   z-index: 2;
@@ -609,6 +730,16 @@ body.section_about section.about {
   overflow-x: hidden; }
   body.section_about section.about::before {
     opacity: .2; }
+
+body.section_veille-technologique nav[role="navigation"] {
+  width: 30%;
+  -webkit-transform: translate3d(-166.68%, 0, 0);
+          transform: translate3d(-166.68%, 0, 0); }
+
+body.section_veille-technologique div[role="main"] {
+  width: 70%;
+  -webkit-transform: translate3d(42.82%, 0, 0);
+          transform: translate3d(42.82%, 0, 0); }
 
 body.section_veille-technologique section.veille-technologique {
   z-index: 2;

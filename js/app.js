@@ -78,6 +78,16 @@ $(function() {
         }
     });
 
+    // $('a[href^="#vt-"]').on('click', function(e) {
+    //     // TODO: SCROLL TO IN "VEILLE TECHNOLOGIQUE"
+    //     e.preventDefault();
+    //     var page = $(this).attr('href'); // Page cible
+    //     var speed = 750; // Durée de l'animation (en ms)
+    //     console.log('scroll');
+    //     $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+    //     return false;
+    // });
+
     $links.on('click', function(e) {
         var href = $(this).attr('href').replace('#', '');
         if(href === 'accueil') {
@@ -90,9 +100,9 @@ $(function() {
         _section.change(href);
     });
 
-    // $nav.on('click', function() {
-    //     $body.removeClass('work_active');
-    // });
+    $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block);
+    });
 
     $(document).on('click', function(e) {
         if(e.which === 2) e.preventDefault();

@@ -1,16 +1,63 @@
 section.veille-technologique
-  color: #fff
+  color: #000
   padding: 40px 100px
-  background-color: #a1a1a1
+  background-color: #f4f3db
+  //background: #a1a1a1 url($imageUrl + "backgrounds/moulin2.jpg") center
+  //background-size: cover
   &::before
-    background-image: url($imageUrl + "backgrounds/moulin.jpg")
+    content: none
+  .page
+    margin-top: 15vh
+    min-height: 55vh
+  img
+    display: block
+    margin: 0 auto
+    &.full-width
+      width: 100%
+  strong
+    font-weight: 800
+  ul, ol
+    &.list--inner
+      padding-top: 0
+      padding-left: 45px
+      padding-bottom: 25px
+  ol
+    padding-top: 25px
+    padding-left: 25px
+    li
+      list-style: decimal inside
+      padding-bottom: 10px
+  figure
+    width: 100%
+    padding: 0 1em 25px
+    text-align: center
+    img
+      max-width: 100%
+      margin: 0 auto .5em
+    figcaption
+      font-size: .75em
+      font-style: italic
+      color: #808080
+      max-width: 37rem
+      margin: 0 auto
+      text-align: left
+      border-bottom: 1px solid #ddd
+      padding-bottom: 0.5rem
   h2
     text-align: center
     font-size: 1.8em
-    margin-top: 10vw
-    margin-bottom: 60px
+    margin-top: 5vh
     span
       font-weight: 200
   p
     text-align: justify
     line-height: 45px
+    padding: 0 20px 25px
+  h3
+    color: #be6700
+    font-size: 2em
+    line-height: 1.2
+    position: relative
+    margin: 2em 0 0.5em
+    padding-bottom: 0.5rem
+    border-bottom: 3px solid #100
