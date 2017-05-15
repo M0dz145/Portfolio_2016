@@ -1,0 +1,73 @@
+section.works
+  display: block
+  padding: 0
+  height: 100%
+  overflow: hidden
+  background-color: #f8f8f8
+  white-space: nowrap
+  &:hover
+    .work_figure:not(:hover)
+      width: 9.5%
+  .block-revealer__content
+    height: 100%
+  .work_figure
+    position: relative
+    display: inline-block
+    height: 100%
+    width: 11.11%
+    padding: 0
+    overflow: hidden
+    cursor: pointer
+    filter: grayscale(70%)
+    background-size: cover
+    background-position: center center
+    transition: all .4s $easeOutCubic, width .6s $easeOutCubic
+    &::before
+      content: ''
+      position: absolute
+      top: 40%
+      left: -5px
+      right: -5px
+      opacity: 0
+      height: 30vh
+      background-color: rgba(0, 0, 0, .7)
+      transition: all .4s $easeOutCubic
+    &:hover
+      z-index: 5
+      width: 25%
+      filter: grayscale(25%)
+      &::before
+        opacity: 1
+      h2
+        opacity: 1
+        transform: translate3d(-50%, -100%, 0)
+        transition: all .7s $easeOutExpo
+      p.description
+        opacity: 1
+        transform: translate3d(-50%, -75%, 0)
+        transition: all .8s .2s $easeOutExpo
+    h2
+      position: absolute
+      text-align: center
+      top: 50%
+      left: 50%
+      opacity: 0
+      color: #fff
+      padding: 0 10px
+      height: 1.5em
+      text-transform: uppercase
+      transform: translate3d(-50%, -50%, 0)
+      transition: all 2s $easeOutExpo
+    p.description
+      display: inline
+      position: absolute
+      text-align: center
+      top: 65%
+      left: 50%
+      width: 80%
+      opacity: 0
+      font-size: .8em
+      color: #fff
+      text-transform: uppercase
+      transform: translate3d(-50%, -50%, 0)
+      transition: all .4s $easeOutExpo

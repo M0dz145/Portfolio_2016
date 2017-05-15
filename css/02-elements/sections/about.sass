@@ -1,0 +1,18 @@
+section.about
+  color: #fff
+  padding: 40px 100px
+  background-color: #a1a1a1
+  &::before
+    background-image: url($imageUrl + "backgrounds/forest_fire.jpg")
+  h2
+    text-align: center
+    font-size: 1.8em
+    margin-top: 10vw
+    margin-bottom: 60px
+    span
+      font-weight: 200
+  p
+    text-align: justify
+    line-height: 45px
+    @media #{$media-sm--}
+      line-height: 20px

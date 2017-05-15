@@ -1,0 +1,10 @@
+@mixin section_show()
+  z-index: 2
+  opacity: 1
+  overflow-x: hidden
+  &::before
+    opacity: .2
+
+@mixin link_active($link-name)
+  body.section_#{$link-name} a[href="##{$link-name}"]
+    color: #aeaeae !important

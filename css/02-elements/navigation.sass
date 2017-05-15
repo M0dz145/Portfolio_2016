@@ -1,0 +1,63 @@
+nav[role="navigation"]
+  z-index: 5
+  display: inline-block
+  position: absolute
+  top: 0
+  left: 50%
+  width: 50%
+  height: 100%
+  transform: translate3d(0, 0, 0)
+  background-color: #fff
+  transition: transform .6s $easeOutQuint, width .4s $easeOutQuint, color .6s $easeOutQuint, background-color .4s $easeInQuint
+  > *
+    position: relative
+  .nav-container
+    display: block
+    position: absolute
+    top: 42%
+    left: 50%
+    width: 100%
+    text-align: center
+    font-weight: 200
+    transform: translate3d(-50%, -50%, 0)
+    @media #{$media-xs}
+      top: 40%
+    ul
+      text-transform: uppercase
+      li
+        @media #{$media-sm--}
+          margin: 5px auto
+  // Réseau sociaux
+  aside.rs
+    position: absolute
+    text-align: center
+    width: 70%
+    top: 83%
+    left: 50%
+    transform: translate3d(-50%, 0, 0)
+    @media #{$media-md--}
+      width: 90%
+    div
+      color: #3a3a3a
+      border: 1px solid #3a3a3a
+      padding: 5px 20px
+      font-weight: 200
+      opacity: .4
+      font-size: 14px
+      transition: opacity .6s $easeOutCubic
+      svg
+        width: 25px
+        height: 25px
+        display: inline-block
+        path, rect, ellipse
+          stroke: #3a3a3a
+          fill: #3a3a3a
+      @media #{$media-sm--}
+        padding: 5px
+      &:hover
+        opacity: 1
+        transition: opacity .2s $easeOutCubic
+      span
+        display: inline-block
+        margin-left: 10px
+        vertical-align: 30%
